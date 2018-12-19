@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="report_invoice_univision_document">
+        <template id="report_invoice_univision_document" inherit_id="account.report_invoice_document">
             <t t-call="web.external_layout">
                 <t t-set="o" t-value="o.with_context({'lang': lang})"/>
                 <t t-set="address">
