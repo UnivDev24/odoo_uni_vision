@@ -19,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['account_invoicing, account_accountant, sale_management'],
+    'depends': ['account, web, sale_management'],
 
     # always loaded
     'data': [
