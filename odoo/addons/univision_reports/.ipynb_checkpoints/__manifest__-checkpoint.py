@@ -19,13 +19,15 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['account'],
+    'depends': ['account, web'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         #'views/views.xml',
-        'views/template_report_invoice_univision.xml',
+        'views/tpl_report_invoice_univision.xml',
+        'views/tpl_report_external_univision.xml',
+        'views/tpl_report_saleorder_univision.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

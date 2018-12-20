@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+         <template id="report_external_univision_document" inherit_id="web.external_layout_background">
+	           
+             <xpath expr="//div[@class='float-left company_address']" position="replace">
+            </xpath>
+             
+              <xpath expr="//div[@t-field='company.report_footer']" position="replace">
+                   <div class="text-muted">
+                    
+                    <span class="page"/>
+                    /
+                    <span class="topage"/>
+                </div>
+            </xpath>
+           
+        </template>
+    </data>
+</odoo>
