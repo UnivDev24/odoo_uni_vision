@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+         <template id="report_invoice_univision_document" inherit_id="account.report_invoice_document">
+	              
+            
+            <xpath expr="//p[@name='comment']" position="replace">
+
+                <p class="mt64" t-if="o.payment_term_id" name="payment_term">
+                            <span t-field="o.payment_term_id.note"/>
+                        </p>
+
+                        <p class="mt32" >
+                            Mode de réglement : 
+                        </p>
+                        <p class="ml16">
+                          <span >Par chèque à l'ordre de UNIVISION</span><br><span >Par virement IBAN FR76 1380 7008 7207 1218 3441 192 - BIC CCBPFRPPNAN</span></br>
+                </p>
+
+            </xpath>
+
+            <xpath expr="//p[@name='note']" position="replace">
+            </xpath>
+
+        </template>
+    </data>
+</odoo>
