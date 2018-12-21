@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "univision_reports",
+    'name': "univision_sale",
 
     'summary': """
-        module containing reports personnalisation for uni vision""",
+         module containing sale personnalisation for uni vision""",
 
     'description': """
-        personnalisation for invoice / headers / etc
+        personnalisation for sale module
     """,
 
     'author': "Uni Vision",
@@ -15,18 +15,14 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'reports',
+    'category': 'sale',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['account, web, sale_management'],
+    'depends': ['sale'],
 
     # always loaded
-    'data': [
-        # 'security/ir.model.access.csv',
-        #'views/views.xml',
-        'views/tpl_report_invoice_univision.xml',
-        'views/tpl_report_external_univision.xml',
+    'data': [        
         'views/tpl_report_saleorder_univision.xml',
     ],
     # only loaded in demonstration mode
