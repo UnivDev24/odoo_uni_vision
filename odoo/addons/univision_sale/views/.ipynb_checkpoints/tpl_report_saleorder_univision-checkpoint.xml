@@ -2,11 +2,11 @@
     <data>
          <template id="report_saleorder_univision_document" inherit_id="sale.report_saleorder_document">
 	           
-             
+            <!-- 
              <xpath expr="//div[@id='informations']/div[@t-if='doc.date_order and doc.state in ['draft','sent']" position="replace">
                  <strong>Quotation Date:</strong>
                     <p t-field="doc.date_order" t-field-options='{"format": "d/MM/y"}'/>
-            </xpath>
+            </xpath>-->
              
              <xpath expr="//div[@id='informations']/div[@t-if='doc.user_id.name']" position="replace">
             </xpath>
