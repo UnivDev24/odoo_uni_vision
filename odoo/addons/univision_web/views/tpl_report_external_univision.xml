@@ -5,7 +5,7 @@
              <xpath expr="//div[@class='float-left company_address']" position="replace">
             </xpath>
              
-              <xpath expr="//div[@t-field='company.report_footer']" position="replace">
+              <xpath expr="//div[@class='text-muted'@t-if='report_type == 'pdf'']" position="replace">
                    <div class="text-muted">
                     
                     <span class="page"/>
