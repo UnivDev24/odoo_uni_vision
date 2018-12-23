@@ -27,10 +27,7 @@
                 
             </xpath>
              
-             
-             <!--<xpath expr="//div[@class='float-left company_address']" position="replace">
-            </xpath>-->
-             
+                          
               <xpath expr="//div[@class='footer o_background_footer']/div/div[@class='text-muted']" position="replace">
                    <div class="text-muted">
                     
