@@ -23,7 +23,6 @@
 
     # always loaded
     'data': [        
-       'views/assets.xml',
        'views/report_univision_templates.xml',
     ],
     # only loaded in demonstration mode
