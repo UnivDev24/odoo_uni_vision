@@ -1,7 +1,11 @@
 <odoo>
     <data>
-         <template id="report_invoice_univision_document" inherit_id="account.report_invoice_document">
-	           
+         <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
+	         
+             
+             
+             
+             
              <xpath expr="//p[@name='comment']" position="replace">
             </xpath>
              

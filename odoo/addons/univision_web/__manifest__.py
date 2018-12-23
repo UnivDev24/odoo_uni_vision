@@ -23,7 +23,7 @@
 
     # always loaded
     'data': [
-       'views/tpl_report_external_univision.xml',
+       'views/report_univision_templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

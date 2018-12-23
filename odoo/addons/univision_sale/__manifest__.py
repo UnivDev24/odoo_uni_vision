@@ -23,7 +23,7 @@
 
     # always loaded
     'data': [        
-        'views/tpl_report_saleorder_univision.xml',
+        'report/sale_report_univision_templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

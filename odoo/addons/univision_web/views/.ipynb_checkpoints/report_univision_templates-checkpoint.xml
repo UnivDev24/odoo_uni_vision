@@ -1,7 +1,12 @@
 <odoo>
     <data>
-         <template id="report_external_univision_document" inherit_id="web.external_layout_background">
+         <template id="external_layout_univision" inherit_id="web.external_layout_background">
 	           
+           <xpath expr="//div[@class='header']/img" position="replace">
+                <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="float-left" style="min-width: 200px; min-height: 60px;" alt="Logo"/>
+            </xpath>
+             
+             
              <xpath expr="//div[@class='float-left company_address']" position="replace">
             </xpath>
              

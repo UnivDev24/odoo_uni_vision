@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+#from odoo import models, fields, api
 
-# class univision_sale(models.Model):
+#class univision_sale(models.Model):
 #     _name = 'univision_sale.univision_sale'
 
 #     name = fields.Char()
