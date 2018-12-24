@@ -14,17 +14,17 @@
              
              
              
-              <xpath expr="//table[@class='table table-sm o_main_table']/thead/tr/th[last()]/span[last()]" position="replace">
+              <xpath expr="//table[@class='table table-sm o_main_table']/thead/tr/th[last()]/t[last()]" position="replace">
              </xpath>
-              <!--            
-             <xpath expr="//table[@class='table table-sm o_main_table']/tbody[@class='sale_tbody']/t/tr/t[@t-if='not line.display_type']/span[@t-field='line.product_uom']" position="replace">
-             </xpath>
-             
-             <xpath expr="//table[@class='table table-sm o_main_table']/tbody[@class='sale_tbody']/t/tr/t[@t-if='not line.display_type']/td[last()]/span[last()]" position="replace">
+                         
+             <xpath expr="//tbody[@class='sale_tbody']/t/tr/t[@t-if='not line.display_type']/td/span[@t-field='line.product_uom']" position="replace">
              </xpath>
              
+             <xpath expr="//tbody[@class='sale_tbody']/t/tr/t[@t-if='not line.display_type']/td[last()]/span[last()]" position="replace">
+             </xpath>
              
-             -->
+             
+             
              
 
         </template>

@@ -2,15 +2,19 @@
     <data>
          <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
 	         
+            <!--<xpath expr="//div[@class='page']" position="replace">
+            </xpath>-->
              
-             <xpath expr="//table[@name='invoice_line_table']/thead/tr/th[last()]/span[last()]" position="replace">
-             </xpath>
-                          
-         <!--    <xpath expr="//table[@name='invoice_line_table']/tbody[@class='invoice_tbody']/t/tr/t[@name='account_invoice_line_accountable']/span[@t-field='line.uom_id']" position="replace">
+             
+              <xpath expr="//table[@name='invoice_line_table']/thead/tr/th[last()]/span[last()]" position="replace">
              </xpath>
              
-             <xpath expr="//table[@name='invoice_line_table']/tbody[@class='invoice_tbody']/t/tr/t[@name='account_invoice_line_accountable']/td[last()]/span[last()]" position="replace">
-             </xpath>-->
+             <xpath expr="///tbody[@class='invoice_tbody']/t/tr/t[@name='account_invoice_line_accountable']/td/span[@t-field='line.uom_id']" position="replace">
+             </xpath>
+             
+             <xpath expr="///tbody[@class='invoice_tbody']/t/tr/t[@name='account_invoice_line_accountable']/td[last()]/span[last()]" position="replace">
+             </xpath>
+             
              
              
              <xpath expr="//p[@name='comment']" position="replace">
