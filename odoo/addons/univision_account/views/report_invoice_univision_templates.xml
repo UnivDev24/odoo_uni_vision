@@ -5,6 +5,10 @@
             <!--<xpath expr="//div[@class='page']" position="replace">
             </xpath>-->
              
+              <xpath expr="//head" position="inside">
+                <link href="/univision_account/static/src/scss/report_invoice_univision.scss" rel="stylesheet"/>
+              </xpath>
+             
              
               <xpath expr="//table[@name='invoice_line_table']/thead/tr/th[last()]/span[last()]" position="replace">
              </xpath>
