@@ -3,7 +3,7 @@
          <template id="report_saleorder_univision" inherit_id="sale.report_saleorder_document">
 	           
              <xpath expr="//div[@class='page']" position="before">
-              <div class="mt64"></div>
+              <div class="mt32"></div>
             </xpath>         
              
             <xpath expr="//div[@id='informations']/div/p[@t-field='doc.date_order']" position="replace">
@@ -27,9 +27,11 @@
              
              
              <xpath expr="//div[@class='clearfix']" position="after">  
-                 <div class="mt64"></div>
+                 <div class="mt32"></div>
             </xpath>
              
+             <xpath expr="//p[@t-if='doc.payment_term_id.note']" position="replace">  
+            </xpath>
              
 
         </template>

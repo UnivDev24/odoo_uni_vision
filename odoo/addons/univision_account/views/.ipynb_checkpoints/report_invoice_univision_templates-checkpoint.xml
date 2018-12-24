@@ -5,14 +5,9 @@
          
              
              <xpath expr="//div[@class='page']" position="before">
-              <div class="mt64"></div>
+              <div class="mt32"></div>
             </xpath>
-             
-              <xpath expr="//head" position="inside">
-                <link href="/univision_account/static/src/scss/report_invoice_univision.scss" rel="stylesheet"/>
-              </xpath>
-             
-             
+                          
               <xpath expr="//table[@name='invoice_line_table']/thead/tr/th[last()]/span[last()]" position="replace">
              </xpath>
              
@@ -26,7 +21,7 @@
              
              
             <xpath expr="//div[@class='clearfix']" position="after">  
-                 <div class="mt64"></div>
+                 <div class="mt32"></div>
             </xpath>
              
              
