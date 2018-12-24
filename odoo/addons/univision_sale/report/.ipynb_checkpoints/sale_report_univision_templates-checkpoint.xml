@@ -2,7 +2,9 @@
     <data>
          <template id="report_saleorder_univision" inherit_id="sale.report_saleorder_document">
 	           
-                        
+             <xpath expr="//div[@class='page']" position="before">
+              <div class="mt64"></div>
+            </xpath>         
              
             <xpath expr="//div[@id='informations']/div/p[@t-field='doc.date_order']" position="replace">
                     <p t-esc="doc.date_order" t-options='{"widget": "date"}'/>
@@ -24,6 +26,9 @@
              </xpath>
              
              
+             <xpath expr="//div[@class='clearfix']" position="after">  
+                 <div class="mt64"></div>
+            </xpath>
              
              
 
