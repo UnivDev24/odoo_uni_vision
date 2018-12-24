@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+         <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
+	         
+         
+             
+             <xpath expr="//div[@class='page']" position="before">
+              <div class="mt32"></div>
+            </xpath>
+                          
+              <xpath expr="//table[@name='invoice_line_table']/thead/tr/th[last()]/span[last()]" position="replace">
+             </xpath>
+             
+             <xpath expr="///tbody[@class='invoice_tbody']/t/tr/t[@name='account_invoice_line_accountable']/td/span[@t-field='line.uom_id']" position="replace">
+             </xpath>
+             
+             <xpath expr="///tbody[@class='invoice_tbody']/t/tr/t[@name='account_invoice_line_accountable']/td[last()]/span[last()]" position="replace">
+             </xpath>
+             
+             
+             
+             
+            <xpath expr="//div[@class='clearfix']" position="after">  
+                 <div class="mt32"></div>
+            </xpath>
+             
+             
+             <xpath expr="//p[@name='comment']" position="replace">
+            </xpath>
+             
+             
+             
+             
+             <xpath expr="//p[@name='payment_term']" position="after">  
+                 
+                        <p class="mt32" >
+                            Mode de réglement : 
+                        </p>
+                        <p class="ml16">
+                          <span >Par chèque à l'ordre de UNIVISION</span><br><span >Par virement IBAN FR76 1380 7008 7207 1218 3441 192 - BIC CCBPFRPPNAN</span></br>
+                </p>
+
+            </xpath>
+
+            <xpath expr="//p[@name='note']" position="replace">
+            </xpath>
+
+        </template>
+    </data>
+</odoo>
