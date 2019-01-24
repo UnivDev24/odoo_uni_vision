@@ -24,6 +24,7 @@
     # always loaded
     'data': [        
         'report/sale_report_univision_templates.xml',
+        'report/sale_report_univision.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
