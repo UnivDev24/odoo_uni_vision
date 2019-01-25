@@ -12,7 +12,7 @@
          <template id="external_layout_univision" inherit_id="web.external_layout_background">
 	           
        
-            <xpath expr="//div[@class='header']" position="replace">
+            <xpath expr="//div[hasclass('header')]" position="replace">
                 
                  <div class="header">
                     <div class="o_background_header_univision">
@@ -28,7 +28,7 @@
             </xpath>
              
                           
-              <xpath expr="//div[@class='footer o_background_footer']/div/div[@class='text-muted']" position="replace">
+              <xpath expr="//div[hasclass('footer', 'o_background_footer')]/div/div[hasclass('text-muted')]" position="replace">
                    <div class="text-muted">
                     
                     <span class="page"/>

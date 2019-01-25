@@ -4,23 +4,23 @@
 	         
          
              
-             <xpath expr="//div[@class='page']" position="before">
+             <xpath expr="//div[hasclass('page')]" position="before">
               <div class="mt32"></div>
             </xpath>
                           
               <xpath expr="//table[@name='invoice_line_table']/thead/tr/th[last()]/span[last()]" position="replace">
              </xpath>
              
-             <xpath expr="///tbody[@class='invoice_tbody']/t/tr/t[@name='account_invoice_line_accountable']/td/span[@t-field='line.uom_id']" position="replace">
+             <xpath expr="///tbody[hasclass('invoice_tbody')]/t/tr/t[@name='account_invoice_line_accountable']/td/span[@t-field='line.uom_id']" position="replace">
              </xpath>
              
-             <xpath expr="///tbody[@class='invoice_tbody']/t/tr/t[@name='account_invoice_line_accountable']/td[last()]/span[last()]" position="replace">
+             <xpath expr="///tbody[hasclass('invoice_tbody')]/t/tr/t[@name='account_invoice_line_accountable']/td[last()]/span[last()]" position="replace">
              </xpath>
              
              
              
              
-            <xpath expr="//div[@class='clearfix']" position="after">  
+            <xpath expr="//div[hasclass('clearfix')]" position="after">  
                  <div class="mt32"></div>
             </xpath>
              
