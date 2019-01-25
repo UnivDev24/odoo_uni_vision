@@ -12,7 +12,7 @@
             report_type="qweb-pdf"
             file="sale.report_saleorder" 
             name="sale.report_saleorder"
-            print_report_name="'Offre n°'+(object.name)+' - ' + (object.partner_id.parent_id.name or '')"
+            print_report_name="'Offre n°'+(object.name)+' - ' + (object.partner_id.name) +' - ' + (object.partner_id.parent_id.name or '')"
         />
         
          <report
@@ -23,7 +23,7 @@
             groups="sale.group_proforma_sales"
             file="sale.report_saleorder_pro_forma"
             name="sale.report_saleorder_pro_forma"
-            print_report_name="'Offre n°'+(object.name)+' - ' + (object.partner_id.parent_id.name or '') + ' - PRO-FORMA'"
+            print_report_name="'Offre n°'+(object.name)+' - '  + (object.partner_id.name) +' - ' + (object.partner_id.parent_id.name or '') + ' - PRO-FORMA'"
         />
         
         
