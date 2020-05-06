@@ -10,7 +10,7 @@
 
                         
                 <xpath exp="//page[@name='page_misc']" position="attributes">
-                    <attribute name="groups">""</attribute>
+                    <attribute name="groups"></attribute>
                 </xpath>
                 
      
