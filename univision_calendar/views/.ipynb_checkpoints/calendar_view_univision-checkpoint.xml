@@ -10,7 +10,7 @@
 
                 <xpath expr="//page[@name='page_misc']" position="replace">
                     
-                     <page name="page_misc" string="Misc" groups="base.group_no_one">
+                     <page name="page_misc" string="Misc" groups="">
                             <group>
                                 <label for="user_id" string="Owner"/>
                                 <field name="user_id" nolabel="1"/>
