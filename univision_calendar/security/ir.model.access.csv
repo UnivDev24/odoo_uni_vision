@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_univision_calendar_univision_calendar,univision_calendar.univision_calendar,model_univision_calendar_univision_calendar,,1,0,0,0
