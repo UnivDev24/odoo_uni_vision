@@ -8,12 +8,17 @@
             <field name="priority" eval="1"/>
             <field name="arch" type="xml">
 
-                        
-                <xpath exp="//page[@name='page_misc']" position="attributes">
-                    <attribute name="groups"></attribute>
-                </xpath>
-                
-     
+                <xpath expr="//page[@name='page_misc']" position="replace">
+                    
+                     <page name="page_misc" string="Misc" groups="">
+                            <group>
+                                <label for="user_id" string="Owner"/>
+                                <field name="user_id" nolabel="1"/>
+                            </group>
+                        </page>
+            
+                </xpath>                
+                     
 
             </field>                               
         </record>
