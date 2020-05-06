@@ -8,9 +8,9 @@
             <field name="priority" eval="1"/>
             <field name="arch" type="xml">
 
-
-                <xpath expr="//page[@name='page_misc']" position="attributes">
-                    <attribute name="groups">{}</attribute>
+                        
+                <xpath exp="//page[@name='page_misc']" position="attributes">
+                    <attribute name="groups">""</attribute>
                 </xpath>
                 
      
