@@ -3,7 +3,7 @@
     'name': "univision_contacts",
 
     'summary': """
-        This module customizes for UniVision contacts module   """,
+        This module customizes module contacts for UniVision   """,
 
     'description': """
         For instance default values / translation
