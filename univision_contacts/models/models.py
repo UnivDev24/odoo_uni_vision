@@ -7,7 +7,7 @@ from odoo import models, fields, api
 
 class univision_contacts(models.Model):
     _inherit ='res.partner'
-    customer = fields.Boolean(string='Is a Customer', default=False,
+    customer = fields.Boolean(string='Is a Customer', default=True,
                                help="Check this box if this contact is a customer. It can be selected in sales orders. Default value set to false.")
     
 #     _name = 'univision_contacts.univision_contacts'
