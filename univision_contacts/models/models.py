@@ -27,9 +27,12 @@ class univision_contacts(models.Model):
         for rec in self:
 
             base_url = self.env['ir.config_parameter'].get_param('web.base.url')
-
-            record_url = base_url + "/web#id=" + str(self.id) + "&action=127&model=res.partner&view_type=form&menu_id=95"
             
+            menu_id = self._context.get('menu_id', False)
+            action = self._context.get('action', False)
+
+            record_url = base_url + "/web#id=" + str(self.id) + "&action=" + str(action) + "&model=res.partner&view_type=form&menu_id=" + str(menu_id) + "
+                       
 
             client_action = {
 
