@@ -31,7 +31,7 @@ class univision_contacts(models.Model):
             menu_id = self._context.get('menu_id', False)
             action = self._context.get('action', False)
 
-            record_url = base_url + "/web#id=" + str(self.id) + "&action=" + str(action) + "&model=res.partner&view_type=form&menu_id=" + str(menu_id) + "
+            record_url = base_url + "/web#id=" + str(self.id) + "&action=" + str(action) + "&model=res.partner&view_type=form&menu_id=" + str(menu_id)
                        
 
             client_action = {
