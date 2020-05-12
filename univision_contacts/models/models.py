@@ -22,20 +22,24 @@ class univision_contacts(models.Model):
                 'target': 'current'}
     
     @api.multi
-    def action_open_new_tab(self):
+    def action_open_new_tab(self, view_id=None, view_type='form', toolbar=False, submenu=False):
 
         for rec in self:
 
             base_url = self.env['ir.config_parameter'].get_param('web.base.url')
 
-            record_url = base_url + "/web#id=" + str(self.id) + "&action=127&model=res.partner&view_type=form&menu_id=95"
             
+            menu = self.env.ref('contacts.menu_contacts')
+            action = self.env.ref('contacts.action_contacts')
+
+            record_url = base_url + "/web#id=" + str(self.id) + "&action=" + str(action.id) + "&model=res.partner&view_type=form&menu_id=" + str(menu.id)
 
             client_action = {
 
                 'type': 'ir.actions.act_url',
 
-                'name': "Contacts",
+                'name': "Contact",
+
 
                 'target': 'new',
 
