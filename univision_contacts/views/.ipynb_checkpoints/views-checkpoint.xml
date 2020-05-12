@@ -15,6 +15,7 @@
                 
                 <xpath expr="//t[@t-name='kanban-box']" position="replace">
                     
+                        <t t-name="kanban-box">
                     
                                           <t t-set="color" t-value="kanban_color(record.color.raw_value)"/>
                                             <div t-att-class="color + (record.title.raw_value == 1 ? ' oe_kanban_color_alert' : '') + ' oe_kanban_global_click'" style="pointer-events: none;">
@@ -49,7 +50,7 @@
                                                 </div>
                                             </div>
                  
-                
+                    </t>
                 
                 </xpath> 
                 
