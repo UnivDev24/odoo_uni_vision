@@ -28,8 +28,6 @@ class univision_contacts(models.Model):
 
             base_url = self.env['ir.config_parameter'].get_param('web.base.url')
             
-            menu_id = self.env['ir.model.data'].get_object_reference('MODULE NAME', 'MENU ID')[1]
-            
             menu = self.env.ref('base.menu_action_res_users')
 
             record_url = base_url + "/web#id=" + str(self.id) + "&action=" + str(menu.action) + "&model=res.partner&view_type=form&menu_id=" + str(menu.id)
