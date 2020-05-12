@@ -22,8 +22,7 @@ class univision_contacts(models.Model):
                 'target': 'current'}
     
     @api.multi
-    def action_open_new_tab(self, view_id=None, view_type='form', toolbar=False, submenu=False):
-
+    def action_open_new_tab():
 
         for rec in self:
 
@@ -34,8 +33,6 @@ class univision_contacts(models.Model):
             action = self.env.ref('contacts.action_contacts')
 
             record_url = base_url + "/web#id=" + str(self.id) + "&action=" + str(action.id) + "&model=res.partner&view_type=form&menu_id=" + str(menu.id)
-                       
-
 
             client_action = {
 
