@@ -22,7 +22,7 @@ class univision_contacts(models.Model):
                 'target': 'current'}
     
     @api.multi
-    def action_open_new_tab(self):
+    def action_open_new_tab(self, view_id=None, view_type='form', toolbar=False, submenu=False):
 
         for rec in self:
 
