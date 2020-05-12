@@ -14,8 +14,8 @@ class univision_contacts(models.Model):
     @api.multi
     def open_record(self): 
         return {'type': 'ir.actions.act_window', 
-                'res_model': 'res.model', 
-                'name': 'Record name', 
+                'res_model': 'res.partner', 
+                'name': 'This contact to See', 
                 'view_type': 'form', 
                 'view_mode': 'form', 
                 'res_id': self.id, 
