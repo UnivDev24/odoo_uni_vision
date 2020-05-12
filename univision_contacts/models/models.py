@@ -15,12 +15,34 @@ class univision_contacts(models.Model):
     def open_record(self): 
         return {'type': 'ir.actions.act_window', 
                 'res_model': 'res.partner', 
-                'name': 'This contact to See', 
+                'name': 'Contacts', 
                 'view_type': 'form', 
                 'view_mode': 'form', 
                 'res_id': self.id, 
                 'target': 'current'}
     
+    @api.multi
+    def action_open_new_tab(self):
+
+        for rec in self:
+
+            base_url = self.env['ir.config_parameter'].get_param('web.base.url')
+
+            record_url = base_url + "/web#id=" + str(self.id) + "&action=127&model=res.partner&view_type=form&menu_id=95"
+            
+
+            client_action = {
+
+                'type': 'ir.actions.act_url',
+
+                'name': "Contacts",
+
+                'target': 'new',
+
+                'url': record_url}
+
+        return client_action
+            
 #     _name = 'univision_contacts.univision_contacts'
 
 #     name = fields.Char()
