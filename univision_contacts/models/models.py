@@ -28,7 +28,7 @@ class univision_contacts(models.Model):
 
             base_url = self.env['ir.config_parameter'].get_param('web.base.url')
             
-            menu_id = self.env['ir.model.data'].get_object_reference('MODULE NAME', 'MENU ID')
+            menu_id = self.env['ir.model.data'].get_object_reference('MODULE NAME', 'MENU ID')[1]
             
             action = self._context.get('action', False)
 
