@@ -5,7 +5,7 @@
       <!-- modify kanban view of res_partner_form - click of kanban item open form in new tab -->
       
       
-       <record model="ir.ui.view" id="view_calendar_event_form_inherited">
+       <record model="ir.ui.view" id="view_partner_form_univision_inherited">
             <field name="name">res.partner.form.inherited</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form" />
