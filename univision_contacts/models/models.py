@@ -26,7 +26,7 @@ class univision_contacts(models.Model):
 
         for rec in self:
 
-            base_url = self.env['ir.config_parameter'].get_param('web.base.url')
+            base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
 
             
             menu = self.env.ref('contacts.menu_contacts')
