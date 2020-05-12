@@ -7,6 +7,7 @@
 
     'description': """
         For instance default values / translation
+        version 0.3 : companies' contact not opened as a popup but as a form
     """,
 
     'author': "Uni Vision",
@@ -16,13 +17,14 @@
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'contacts',
-    'version': '0.2',
+    'version': '0.3',
 
     # any module necessary for this one to work correctly
     'depends': ['contacts'],
 
     # always loaded
     'data': [
+        'views/views.xml'
         # 'security/ir.model.access.csv',
         
     ],
