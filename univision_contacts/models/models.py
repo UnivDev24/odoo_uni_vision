@@ -27,18 +27,19 @@ class univision_contacts(models.Model):
         for rec in self:
 
             base_url = self.env['ir.config_parameter'].get_param('web.base.url')
+
             
             menu = self.env.ref('contacts.menu_contacts')
             action = self.env.ref('contacts.action_contacts')
 
             record_url = base_url + "/web#id=" + str(self.id) + "&action=" + str(action.id) + "&model=res.partner&view_type=form&menu_id=" + str(menu.id)
-                       
 
             client_action = {
 
                 'type': 'ir.actions.act_url',
 
                 'name': "Contact",
+
 
                 'target': 'new',
 
