@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "univision_account",
+    'name': "univision_web",
 
     'summary': """
-        module containing account personnalisation for uni vision""",
+         module containing web personnalisation for uni vision""",
 
     'description': """
-        personnalisation for account module
+        personnalisation for web module
     """,
 
     'author': "Uni Vision",
@@ -15,16 +15,15 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'account',
+    'category': 'web',
     'version': '0.2.2',
 
     # any module necessary for this one to work correctly
-    'depends': ['account'],
+    'depends': ['web'],
 
     # always loaded
-    'data': [
-        'views/report_invoice_univision_templates.xml',
-        'views/account_report_univision.xml',
+    'data': [        
+       'views/report_univision_templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
