@@ -22,18 +22,11 @@
             <xpath expr="//div[hasclass('clearfix')]" position="after">  
                  <div class="mt32"></div>
             </xpath>
-         <!--   <xpath expr="//div[hasclass('page')]/p[@t-if='o.reference']" position="replace">  
 
-                
-                <p t-if="o.reference">
-                        Merci d'utiliser la communication suivante pour votre paiement : <b><span t-field="o.number"/></b>
-                </p>
-                
-            </xpath>-->
              
-             <xpath expr="//div[hasclass('page')]/p[@t-if='o.type in ('out_invoice', 'in_refund')']" position="replace">  
+             <xpath expr="//div[hasclass('page')]/p[@t-if='o.type in (\'out_invoice\', \'in_refund\')']" position="replace">  
                 
-                <p t-if="o.reference">
+                <p t-if="o.type in ('out_invoice', 'in_refund')">
                         Merci d'utiliser la communication suivante pour votre paiement : <b><span t-field="o.name"/></b>
                 </p>
                 
