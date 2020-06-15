@@ -8,10 +8,7 @@ from odoo import models, fields, api
 class univision_contacts(models.Model):
     _inherit ='res.partner'
     
-    customer = fields.Boolean(string='Is a Customer', default=True,
-                               help="Check this box if this contact is a customer. It can be selected in sales orders. Default value set to false.")
-
-    @api.multi
+    
     def open_record(self): 
         return {'type': 'ir.actions.act_window', 
                 'res_model': 'res.partner', 
@@ -21,7 +18,7 @@ class univision_contacts(models.Model):
                 'res_id': self.id, 
                 'target': 'current'}
     
-    @api.multi
+  
     def action_open_new_tab(self):
 
         for rec in self:
@@ -46,14 +43,3 @@ class univision_contacts(models.Model):
                 'url': record_url}
 
         return client_action
-            
-#     _name = 'univision_contacts.univision_contacts'
-
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100

@@ -23,7 +23,7 @@
                  <div class="mt32"></div>
             </xpath>
 
-             
+             <!--
              <xpath expr="//div[hasclass('page')]/p[@t-if='o.type in (\'out_invoice\', \'in_refund\')']" position="replace">  
                 
                 <p t-if="o.type in ('out_invoice', 'in_refund')">
@@ -31,7 +31,7 @@
                 </p>
                 
             </xpath>
-             
+             -->
              
              
              <xpath expr="//p[@name='comment']" position="replace">
