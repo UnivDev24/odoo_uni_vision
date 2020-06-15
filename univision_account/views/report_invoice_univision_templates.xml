@@ -12,6 +12,7 @@
              </xpath>
              
              <xpath expr="///tbody[hasclass('invoice_tbody')]/t/tr/t[@name='account_invoice_line_accountable']/td/span[@t-field='line.product_uom_id']" position="replace">
+
              </xpath>
              
              <xpath expr="///tbody[hasclass('invoice_tbody')]/t/tr/t[@name='account_invoice_line_accountable']/td[last()]/span[last()]" position="replace">
@@ -21,8 +22,8 @@
             <xpath expr="//div[hasclass('clearfix')]" position="after">  
                  <div class="mt32"></div>
             </xpath>
-             
          <!--   <xpath expr="//div[hasclass('page')]/p[@t-if='o.reference']" position="replace">  
+
                 
                 <p t-if="o.reference">
                         Merci d'utiliser la communication suivante pour votre paiement : <b><span t-field="o.number"/></b>
