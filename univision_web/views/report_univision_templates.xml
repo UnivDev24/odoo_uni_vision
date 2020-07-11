@@ -12,6 +12,7 @@
          <template id="external_layout_univision" inherit_id="web.external_layout_background">
 	           
        
+             <!--
             <xpath expr="//div[@t-attf-class='o_company_#{company.id}_layout header']" position="replace">                
                 
                 <div t-attf-class="o_company_#{company.id}_layout header">
@@ -36,6 +37,7 @@
                     <span class="topage"/>
                 </div>
             </xpath>
+-->
            
         </template>
     </data>
