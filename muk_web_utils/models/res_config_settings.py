@@ -48,12 +48,14 @@ class ResConfigSettings(models.TransientModel):
     # Functions
     #----------------------------------------------------------
     
-    @api.multi 
-    def set_values(self):
-        res = super(ResConfigSettings, self).set_values()
-        param = self.env['ir.config_parameter'].sudo()
-        param.set_param('muk_web_utils.binary_max_size', self.binary_max_size)
-        return res
+    #     BUGTOFIX no api multi in V15
+    
+#     @api.multi 
+#     def set_values(self):
+#         res = super(ResConfigSettings, self).set_values()
+#         param = self.env['ir.config_parameter'].sudo()
+#         param.set_param('muk_web_utils.binary_max_size', self.binary_max_size)
+#         return res
 
     @api.model
     def get_values(self):
