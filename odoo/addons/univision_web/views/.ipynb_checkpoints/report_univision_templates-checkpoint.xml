@@ -2,11 +2,12 @@
     <data>
         
          <!-- Assets for reports -->
-        <template id="report_assets_common_univision" name="Header style" inherit_id="web.report_assets_common">
+<!--    BUG TO FIX      -->
+<!--         <template id="report_assets_common_univision" name="Header style" inherit_id="web.report_assets_common">
             <xpath expr="link[last()]" position="after">
                 <link rel="stylesheet" type="text/scss" href="/univision_web/static/src/scss/layout_background_univision.scss"/>
             </xpath>
-        </template>
+        </template> -->
         
         
          <template id="external_layout_univision" inherit_id="web.external_layout_background">
