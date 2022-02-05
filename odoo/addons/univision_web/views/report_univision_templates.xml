@@ -9,8 +9,8 @@
             </xpath>
         </template> -->
         
-        
-         <template id="external_layout_univision" inherit_id="web.external_layout_background">
+   <!--    BUG TO FIX      -->     
+<!--          <template id="external_layout_univision" inherit_id="web.external_layout_background">
 	           
        
             <xpath expr="//div[hasclass('header')]" position="replace">
@@ -38,6 +38,6 @@
                 </div>
             </xpath>
            
-        </template>
+        </template> -->
     </data>
 </odoo>
