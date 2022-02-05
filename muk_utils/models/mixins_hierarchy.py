@@ -128,16 +128,18 @@ class Hierarchy(models.AbstractModel):
     # Create, Update, Delete
     #----------------------------------------------------------
     
-    @api.multi
-    def write(self, vals):
-        if self._parent_path_store and self._rec_name_fallback() in vals:
-            with self.env.norecompute():
-                res = super(Hierarchy, self).write(vals)
-                domain = [('id', 'child_of', self.ids)]
-                records = self.sudo().search(domain)
-                records.modified(['parent_path'])
-            if self.env.recompute and self.env.context.get('recompute', True):
-                records.recompute()
-            return res  
-        return super(Hierarchy, self).write(vals)        
+#     BUGTOFIX no api multi in V15
+    
+#     @api.multi
+#     def write(self, vals):
+#         if self._parent_path_store and self._rec_name_fallback() in vals:
+#             with self.env.norecompute():
+#                 res = super(Hierarchy, self).write(vals)
+#                 domain = [('id', 'child_of', self.ids)]
+#                 records = self.sudo().search(domain)
+#                 records.modified(['parent_path'])
+#             if self.env.recompute and self.env.context.get('recompute', True):
+#                 records.recompute()
+#             return res  
+#         return super(Hierarchy, self).write(vals)        
             
