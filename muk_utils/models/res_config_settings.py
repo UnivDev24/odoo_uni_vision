@@ -50,12 +50,14 @@ class ResConfigSettings(models.TransientModel):
     # Functions
     #----------------------------------------------------------
     
-    @api.multi 
-    def set_values(self):
-        res = super(ResConfigSettings, self).set_values()
-        param = self.env['ir.config_parameter'].sudo()
-        param.set_param('ir_attachment.location', self.attachment_location)
-        return res
+    #     BUGTOFIX no api multi in V15
+    
+#     @api.multi 
+#     def set_values(self):
+#         res = super(ResConfigSettings, self).set_values()
+#         param = self.env['ir.config_parameter'].sudo()
+#         param.set_param('ir_attachment.location', self.attachment_location)
+#         return res
 
     @api.model
     def get_values(self):

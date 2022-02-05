@@ -67,9 +67,11 @@ class IrAttachment(models.Model):
     # Actions
     #----------------------------------------------------------
     
-    @api.multi
-    def action_migrate(self):
-        self.migrate()
+    #     BUGTOFIX no api multi in V15
+    
+#     @api.multi
+#     def action_migrate(self):
+#         self.migrate()
     
     #----------------------------------------------------------
     # Functions
@@ -95,42 +97,48 @@ class IrAttachment(models.Model):
         self.search(record_domain).migrate()
         return True
     
-    @api.multi
-    def migrate(self):
-        record_count = len(self)
-        storage = self._storage().upper()
-        for index, attach in enumerate(self):
-            _logger.info(_("Migrate Attachment %s of %s to %s") % (index + 1, record_count, storage))
-            attach.with_context(migration=True).write({'datas': attach.datas})
+    #     BUGTOFIX no api multi in V15
+    
+#     @api.multi
+#     def migrate(self):
+#         record_count = len(self)
+#         storage = self._storage().upper()
+#         for index, attach in enumerate(self):
+#             _logger.info(_("Migrate Attachment %s of %s to %s") % (index + 1, record_count, storage))
+#             attach.with_context(migration=True).write({'datas': attach.datas})
             
     #----------------------------------------------------------
     # Read
     #----------------------------------------------------------
     
-    @api.multi
-    def _compute_mimetype(self, values):
-        if self.env.context.get('migration') and len(self) == 1:
-            return self.mimetype or 'application/octet-stream'
-        else:
-            return super(IrAttachment, self)._compute_mimetype(values)
+    #     BUGTOFIX no api multi in V15
+    
+#     @api.multi
+#     def _compute_mimetype(self, values):
+#         if self.env.context.get('migration') and len(self) == 1:
+#             return self.mimetype or 'application/octet-stream'
+#         else:
+#             return super(IrAttachment, self)._compute_mimetype(values)
         
     #----------------------------------------------------------
     # Create, Write, Delete
     #----------------------------------------------------------
     
-    @api.multi
-    def _inverse_datas(self):
-        location = self._storage()
-        for attach in self:
-            value = attach.datas
-            bin_data = base64.b64decode(value) if value else b''
-            vals = self._get_datas_inital_vals()
-            vals = self._update_datas_vals(vals, attach, bin_data)
-            if value and location != 'db':
-                vals['store_fname'] = self._file_write(value, vals['checksum'])
-            else:
-                vals['db_datas'] = value
-            clean_vals = self._get_datas_clean_vals(attach)
-            super(IrAttachment, attach.sudo()).write(vals)
-            self._clean_datas_after_write(clean_vals)
+    #     BUGTOFIX no api multi in V15
+    
+#     @api.multi
+#     def _inverse_datas(self):
+#         location = self._storage()
+#         for attach in self:
+#             value = attach.datas
+#             bin_data = base64.b64decode(value) if value else b''
+#             vals = self._get_datas_inital_vals()
+#             vals = self._update_datas_vals(vals, attach, bin_data)
+#             if value and location != 'db':
+#                 vals['store_fname'] = self._file_write(value, vals['checksum'])
+#             else:
+#                 vals['db_datas'] = value
+#             clean_vals = self._get_datas_clean_vals(attach)
+#             super(IrAttachment, attach.sudo()).write(vals)
+#             self._clean_datas_after_write(clean_vals)
         
