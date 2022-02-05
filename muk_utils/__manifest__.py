@@ -32,13 +32,13 @@
         "base_setup",
     ],
     "data": [
-#         "actions/ir_attachment.xml",
-#         "views/ir_attachment.xml",
-#         "views/mixins_groups.xml",
-#         "views/res_config_settings.xml",
+        "actions/ir_attachment.xml",
+        "views/ir_attachment.xml",
+        "views/mixins_groups.xml",
+        "views/res_config_settings.xml",
     ],
     "qweb": [
-#         "static/src/xml/*.xml",
+        "static/src/xml/*.xml",
     ],
     "images": [
         'static/description/banner.png'
