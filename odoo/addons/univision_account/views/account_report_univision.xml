@@ -5,7 +5,8 @@
         
         <!-- to be consider should be before the initial report -->
         
-        <report
+        
+<!--         <report
             id="00_univision_account_invoices"
             model="account.invoice"
             string="00_Factures Uni Vision"
@@ -15,9 +16,9 @@
             attachment="(object.state in ('open','in_payment','paid')) and ('FACT'+(object.number or '').replace('/','') + ' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')"
             print_report_name="'FACT'+(object.number or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '')"
             groups="account.group_account_invoice"
-        />
+        /> -->
         
-         <report
+<!--          <report
             id="00_univision_account_invoices_without_payment"
             model="account.invoice"
             string="00_Factures Uni Vision sans paiement"
@@ -28,7 +29,7 @@
             print_report_name="'FACT'+(object.number or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '')"
         />
         
-        
+         -->
        
 
      
