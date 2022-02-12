@@ -2,7 +2,7 @@
     <data>
         
         <template id="external_layout_univision" inherit_id="web.external_layout_striped">
-	           <xpath expr="contains(@t-attf-class, 'header')" position="replace">   
+	           <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">   
                    
                 <div t-attf-class="o_company_#{company.id}_layout header" t-att-style="report_header_style">
                     <div class="o_background_header_univision">
