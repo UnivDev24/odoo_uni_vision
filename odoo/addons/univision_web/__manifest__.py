@@ -18,13 +18,18 @@
     # for the full list
     'category': 'web',
     'version': '0.2',
-
+    'assets' : {
+        'web.report_assets_common': [
+            'static/scss/layout_background.scss',
+            'static/scss/report.scss'
+        ],
+    },
     # any module necessary for this one to work correctly
     'depends': ['web'],
 
     # always loaded
     'data': [        
-       'views/report_univision_templates.xml',
+       'views/report_templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
