@@ -9,6 +9,11 @@
     
     .univision_report_header{
         max-width:500px;
+//         color:  $o-community-color;
+        color:  pink;
+        font-weight: 700;
+        font-size: 1.5rem;
+       text-align: right;
     }
     
     h3 {
@@ -16,6 +21,7 @@
         font-weight: 700;
         font-size: 1.5rem;
 //         max-width: 300px;
+        
     }
 //     h3 {
 //         color: $o-default-report-primary-color;
