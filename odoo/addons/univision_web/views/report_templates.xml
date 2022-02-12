@@ -3,9 +3,22 @@
         
         <template id="external_layout_univision" inherit_id="web.external_layout_striped">
 	        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">   
+                                
+                
+                    <div class="header" t-att-style="report_header_style">
+                        <div class="o_boxed_header">
+                        <div class="row mb8">
+                            <div class="col-6">
+                                <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo"/>
+                            </div>
+                            <div class="col-6 text-right mb4">
+                                <h4 class="mt0" t-field="company.report_header"/>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                
-<!--                 <div t-attf-class="o_company_#{company.id}_layout header " t-att-style="report_header_style"> -->
-                <div t-attf-class="o_company_#{company.id}_layout header ">
+<!--                 <div t-attf-class="o_company_#{company.id}_layout header " t-att-style="report_header_style">
                     <div class="row o_background_header_univision">
                         
                         <div class="col-8 ">
@@ -13,11 +26,11 @@
                         </div>
                         
                         <div class="col-4">
-                            <h3 class="mt0 text-right float-left" t-field="company.report_header"/>
+                            <h3 class="mt0 text-right float-right" t-field="company.report_header"/>
                         </div>
                         
                     </div>
-                </div>    
+                </div>     -->
                 
             </xpath>
             
