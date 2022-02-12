@@ -1,6 +1,34 @@
 <odoo>
     <data>
         
+        <t t-name="external_layout_univision" t-inherit="web.external_layout_striped" t-inherit-mode="primary">
+	           <xpath expr="//div[@class('header')]" position="replace">   
+                   
+                <div t-attf-class="o_company_#{company.id}_layout header" t-att-style="report_header_style">
+                    <div class="o_background_header_univision">
+                    <div class="float-right">
+                        <h3 class="mt0 text-right" t-field="company.report_header"/>
+                    </div>
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="float-left" alt="Logo"/>
+                    <div class="clearfix mb8"/>
+                    </div>
+                </div>                      
+            </xpath>
+            
+            <xpath expr="//div[@class('footer', 'o_background_footer')]/div/div[hasclass('text-muted')]" position="replace">
+                 <div t-if="report_type == 'pdf'" class="text-muted">                  
+                    <span class="page"/>
+                    /
+                    <span class="topage"/>
+                </div>
+            </xpath>           
+            
+        </t>
+        
+        
+        
+        
+        
         
          <!-- Assets for reports -->
 <!--     FIXMEMIG  -->
@@ -11,7 +39,7 @@
         </template> -->
         
    <!--   FIXMEMIG     -->     
-         <template id="external_layout_univision" inherit_id="web.external_layout_striped">
+<!--          <template id="external_layout_univision" inherit_id="web.external_layout_striped">
 	           
        
             <xpath expr="//div[hasclass('header')]" position="replace">                
@@ -35,6 +63,6 @@
                 </div>
             </xpath>
            
-        </template>
+        </template> -->
     </data>
 </odoo>
