@@ -20,8 +20,8 @@
     'version': '0.2',
     'assets' : {
         'web.report_assets_common': [
-            'static/scss/layout_background.scss',
-            'static/scss/report.scss'
+            'univision_web/static/scss/layout_background.scss',
+            'univision_web/static/scss/report.scss'
         ],
     },
     # any module necessary for this one to work correctly
