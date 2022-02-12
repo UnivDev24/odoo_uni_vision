@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        
+        <!--    FIXMEMIG      -->
+        
         <!-- QWeb Reports -->
         
         <!-- to be consider should be before the initial report -->
-        
+<!--         
         <report
              id="00_univision_action_report_saleorder"
             string="00_Devis Uni Vision"
@@ -26,7 +29,7 @@
             print_report_name="'Offre n°'+(object.name or '')+' - '  + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') + ' - PRO-FORMA'"
         />
         
-        
+         -->
        
 
      
