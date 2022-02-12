@@ -1,7 +1,7 @@
 <odoo>
     <data>
         
-        <t t-name="external_layout_univision" t-inherit="web.external_layout_striped" t-inherit-mode="primary">
+        <template id="external_layout_univision" inherit_id="web.external_layout_striped">
 	           <xpath expr="//div[@class('header')]" position="replace">   
                    
                 <div t-attf-class="o_company_#{company.id}_layout header" t-att-style="report_header_style">
@@ -23,7 +23,7 @@
                 </div>
             </xpath>           
             
-        </t>
+        </template>
         
         
         
