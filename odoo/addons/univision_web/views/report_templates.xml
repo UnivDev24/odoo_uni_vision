@@ -15,7 +15,7 @@
                 </div>                      
             </xpath> -->
             
-            <xpath expr="//div[hasclass('footer', 'o_background_footer')]/div/div[hasclass('text-muted')]" position="replace">
+            <xpath expr="//div[contains(@t-attf-class, 'footer')]/div/div[hasclass('text-muted')]" position="replace">
                  <div t-if="report_type == 'pdf'" class="text-muted">                  
                     <span class="page"/>
                     /
