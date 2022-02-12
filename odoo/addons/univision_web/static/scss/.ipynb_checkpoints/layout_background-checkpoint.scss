@@ -6,11 +6,16 @@
         max-width: 325px;
         margin-right: 16px;
     }
+    
+    .univision_report_header{
+        max-width:500px;
+    }
+    
     h3 {
         color:  $o-community-color;
         font-weight: 700;
         font-size: 1.5rem;
-        max-width: 300px;
+//         max-width: 300px;
     }
 //     h3 {
 //         color: $o-default-report-primary-color;
@@ -19,6 +24,7 @@
 //         max-width: 375px;
 //     }
 }
+
 
 .o_background_footer {
     .list-inline-item {
@@ -36,6 +42,6 @@
 }
 
 .univision_footer{
-     color: $o-brand-odoo;
+     color: gray('700');
 }
 
