@@ -2,14 +2,14 @@
     <data>
         
          <!-- Assets for reports -->
-<!--    BUG TO FIX      -->
+<!--     FIXMEMIG  -->
 <!--         <template id="report_assets_common_univision" name="Header style" inherit_id="web.report_assets_common">
             <xpath expr="link[last()]" position="after">
                 <link rel="stylesheet" type="text/scss" href="/univision_web/static/src/scss/layout_background_univision.scss"/>
             </xpath>
         </template> -->
         
-   <!--    BUG TO FIX      -->     
+   <!--   FIXMEMIG     -->     
 <!--          <template id="external_layout_univision" inherit_id="web.external_layout_background">
 	           
        

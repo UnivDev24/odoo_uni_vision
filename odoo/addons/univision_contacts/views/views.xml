@@ -1,7 +1,7 @@
 <odoo>
   <data>
       
-<!--  BUGTOFIX NOT COMPATIBLE WITH VERSION 15.0      -->
+<!--  FIXMEMIG NOT COMPATIBLE WITH VERSION 15.0      -->
       
       <!-- modify kanban view of res_partner_form - click of kanban item open form in new tab -->
 <!--       

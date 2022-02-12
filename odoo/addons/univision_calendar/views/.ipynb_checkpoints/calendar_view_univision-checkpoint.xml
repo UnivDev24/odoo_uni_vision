@@ -1,6 +1,6 @@
 <odoo>
   <data>
-      <!--              BUGTOFIX FFI    -->
+      <!--         FIXMEMIG    -->
 <!--        <record model="ir.ui.view" id="view_calendar_event_form_inherited">
             <field name="name">calendar.event.form.inherited</field>
             <field name="model">calendar.event</field>

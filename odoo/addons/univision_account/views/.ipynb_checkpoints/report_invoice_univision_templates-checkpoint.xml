@@ -1,6 +1,9 @@
 <odoo>
     <data>
-         <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
+        
+<!--    FIXMEMIG      -->
+        
+<!--          <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
 	         
          
              
@@ -52,6 +55,6 @@
             <xpath expr="//p[@name='note']" position="replace">
             </xpath>
 
-        </template>
+        </template> -->
     </data>
 </odoo>

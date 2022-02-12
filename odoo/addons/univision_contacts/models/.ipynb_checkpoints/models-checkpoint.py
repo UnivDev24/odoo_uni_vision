@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 
-# BUGTOFIX
+# FIXMEMIG
 
 #we inherit res_partner to modify the default value of customer
 
