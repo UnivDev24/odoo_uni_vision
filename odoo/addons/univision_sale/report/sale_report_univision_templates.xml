@@ -1,6 +1,8 @@
 <odoo>
     <data>
-         <template id="report_saleorder_univision" inherit_id="sale.report_saleorder_document">
+        
+        <!--    FIXMEMIG      -->
+<!--          <template id="report_saleorder_univision" inherit_id="sale.report_saleorder_document">
 	           
              <xpath expr="//div[hasclass('page')]" position="before">
               <div class="mt32"></div>
@@ -34,6 +36,6 @@
             </xpath>
              
 
-        </template>
+        </template> -->
     </data>
 </odoo>
