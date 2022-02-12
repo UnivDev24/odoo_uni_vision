@@ -7,7 +7,7 @@
                 <div t-attf-class="o_company_#{company.id}_layout header" t-att-style="report_header_style">
                     <div class="o_background_header_univision">
                     <div class="float-right">
-                        <h3 class="mt0 text-right" t-field="company.report_header"/>
+                        <h3 class="univision_report_header mr10 mt0 text-right" t-field="company.report_header"/>
                     </div>
                     <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="float-left" alt="Logo"/>
                     <div class="clearfix mb8"/>
@@ -23,7 +23,7 @@
                         <li t-if="company.website" class="list-inline-item"><i class="fa fa-globe" role="img" aria-label="Website" title="Website"/> <span t-field="company.website"/></li>
                         <li t-if="company.vat" class="list-inline-item"><i class="fa fa-building-o" role="img" aria-label="Fiscal number"/><t t-esc="(company.country_id.vat_label or 'Tax ID').replace(' ','\N{NO-BREAK SPACE}')"/>: <span t-esc="company.vat.replace(' ','\N{NO-BREAK SPACE}')"/></li>
                     </ul>
-                    <div t-field="company.report_footer"/>
+                    <div class="univision_footer" t-field="company.report_footer"/>
                     <div t-if="report_type == 'pdf'" class="text-muted">                   
                         <span class="page"/>
                         /
