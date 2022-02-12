@@ -3,8 +3,9 @@
         
         <template id="external_layout_univision" inherit_id="web.external_layout_striped">
 	        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">   
-                   
-                <div t-attf-class="o_company_#{company.id}_layout header " t-att-style="report_header_style">
+               
+<!--                 <div t-attf-class="o_company_#{company.id}_layout header " t-att-style="report_header_style"> -->
+                <div t-attf-class="o_company_#{company.id}_layout header ">
                     <div class="row o_background_header_univision">
                         
                         <div class="col-8 ">
