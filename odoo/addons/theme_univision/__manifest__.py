@@ -7,7 +7,8 @@
     'license':"LGPL-3",
     'category': 'Theme/Creative',
 
-    'depends': ['website', 'website_theme_install'],
+    'depends': ['website', 'web'],
+    
     'data': [
     ],
 }
