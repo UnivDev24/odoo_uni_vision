@@ -19,9 +19,9 @@
     'category': 'web',
     'version': '0.2',
     'assets' : {
-        'web.report_assets_common': [
-            'univision_web/static/scss/layout_background.scss',
-            'univision_web/static/scss/report.scss'
+        'web.report_assets_common': [            
+            'univision_web/static/scss/report.scss',
+            'univision_web/static/scss/layout_background.scss'
         ],
     },
     # any module necessary for this one to work correctly

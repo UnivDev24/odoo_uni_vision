@@ -10,5 +10,5 @@ $univision-secondary: #355c7e;
 
 
 $o-default-report-font: 'Lato' !default;
-$o-default-report-primary-color: #af5a2a !default;
-$o-default-report-secondary-color: #355c7e !default;
+$o-default-report-primary-color: $univision-primary !default;
+$o-default-report-secondary-color: $univision-secondary !default;
