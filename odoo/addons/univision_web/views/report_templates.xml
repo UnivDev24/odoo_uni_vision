@@ -2,9 +2,7 @@
     <data>
         
         <template id="external_layout_univision" inherit_id="web.external_layout_striped">
-	        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">   
-                                
-                
+	        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">                             
                     <div class="header" t-att-style="report_header_style">
                         <div class="o_boxed_header">
                             <div class="row mb8 o_background_header_univision">
@@ -34,32 +32,9 @@
                         <span class="topage"/>
                     </div>
                 </div>
-            </xpath>           
-            
+            </xpath>                 
         </template>
         
-        
-        
-            
-            <!--  <div t-attf-class="o_company_#{company.id}_layout header" t-att-style="report_header_style">
-                    <div class="o_background_header_univision">
-                    <div class="float-right">
-                        <h3 class="univision_report_header mr10 mt0 text-right" t-field="company.report_header"/>
-                    </div>
-                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="float-left" alt="Logo"/>
-                    <div class="clearfix mb8"/>
-                    </div>
-                </div>     -->
-        
-        
-        
-         <!-- Assets for reports -->
-<!--     FIXMEMIG  -->
-<!--         <template id="report_assets_common_univision" name="Header style" inherit_id="web.report_assets_common">
-            <xpath expr="link[last()]" position="after">
-                <link rel="stylesheet" type="text/scss" href="/univision_web/static/src/scss/layout_background_univision.scss"/>
-            </xpath>
-        </template> -->
 
     </data>
 </odoo>
