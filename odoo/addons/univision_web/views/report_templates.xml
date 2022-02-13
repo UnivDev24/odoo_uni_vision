@@ -12,7 +12,7 @@
                                     <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo"/>
                                 </div>
                                 <div class="col-6 text-right mb4">
-                                    <h3 class="mt10">Affichage Numérique</span>
+                                    <h3 class="mt10">Affichage Numérique</h3>
                                 </div>
                             </div>
                         </div>
