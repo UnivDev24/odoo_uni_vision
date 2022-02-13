@@ -5,7 +5,7 @@
     }
     
     h3 {
-        color:  $o-default-report-secondary-color;
+        color:  $univision-secondary;
         font-weight: 700;
         font-size: 1.5rem;
         
@@ -13,7 +13,7 @@
 }
 
 .univision_report_header{
-    color:  $o-default-report-secondary-color;
+    color:  $univision-primary;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -24,12 +24,12 @@
         white-space: nowrap;
     }
     ul {
-        border-top: 1px solid $o-default-report-primary-color;
-        border-bottom: 1px solid $o-default-report-primary-color;
+        border-top: 1px solid $univision-primary;
+        border-bottom: 1px solid $univision-primary;
         padding: 4px 0;
         margin: 0 0 4px 0;
         li {
-            color: $o-default-report-primary-color
+            color: $univision-primary
         }
     }
 }
