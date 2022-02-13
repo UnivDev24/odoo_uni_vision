@@ -5,12 +5,19 @@
     }
     
     h3 {
-        color:  $univision-primary;
+        color:  $univision-secondary;
         font-weight: 700;
         font-size: 1.5rem;
         
     }
 }
+
+.univision_report_header{
+    color:  $univision-secondary;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 
 .o_background_footer {
     .list-inline-item {

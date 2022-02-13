@@ -13,7 +13,7 @@
                                 </div>
                                 <div class="col-6 text-right mb4">
                                     <h3 class="mt10">Affichage Numérique</h3>
-                                    <h3 class="mt10" t-field="company.report_header"></h3>
+                                    <span class="mt10 univision_report_header" t-field="company.report_header"></span>
                                 </div>
                             </div>
                         </div>
