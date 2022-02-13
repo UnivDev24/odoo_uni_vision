@@ -1,25 +1,15 @@
 .o_background_header_univision {
-//     min-width: 900px;
-//     border-bottom: 1px solid gray('200');
     img {
         max-height: 96px;
         max-width: 325px;
-//         margin-right: 16px;
     }
     
     h3 {
-        color:  $o-community-color;
-        color:  pink;
+        color:  $o-default-report-secondary-color;
         font-weight: 700;
         font-size: 1.5rem;
         
     }
-//     h3 {
-//         color: $o-default-report-primary-color;
-//         font-weight: 700;
-//         font-size: 1.5rem;
-//         max-width: 375px;
-//     }
 }
 
 
@@ -28,12 +18,12 @@
         white-space: nowrap;
     }
     ul {
-        border-top: 1px solid $o-community-color;
-        border-bottom: 1px solid $o-community-color;
+        border-top: 1px solid $o-default-report-secondary-color;
+        border-bottom: 1px solid $o-default-report-secondary-color;
         padding: 4px 0;
         margin: 0 0 4px 0;
         li {
-            color: $o-brand-odoo;
+            color: $o-default-report-secondary-color;
         }
     }
 }
