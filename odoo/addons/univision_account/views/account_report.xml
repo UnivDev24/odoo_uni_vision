@@ -5,7 +5,7 @@
         
         <!-- to be consider should be before the initial report -->
         
-        <record id="00_univision_account_invoices" model="ir.actions.report">
+        <record id="account_invoices_univision" model="ir.actions.report">
             <field name="name">Invoices</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
