@@ -4,34 +4,20 @@
         <!-- QWeb Reports -->
         
         <!-- to be consider should be before the initial report -->
-        
-         <record id="action_report_vehicle_order" model="ir.actions.report">
-            <field name="name">Vehicle Order</field>
-            <field name="model">account.move</field>
-            <field name="report_type">qweb-pdf</field>
-            <field name="report_name">account.report_invoice_with_payments</field>
-            <field name="report_file">account.report_invoice_with_payments</field>    
-            <field name="print_report_name">Tutu</field>
-            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
-            <field name="binding_model_id" ref="model_account_move"/>
-            <field name="binding_type">report</field>
-            <field name="groups_id" eval="[(4, ref('account.group_account_invoice')),
- (4, ref('account.group_account_readonly'))]"/>
-        </record>
+
         
                 <!--    FIXMEMIG      -->
         
-<!--         <report
-            id="00_univision_account_invoices"
-            model="account.invoice"
-            string="00_Factures Uni Vision"
-            report_type="qweb-pdf"
-            name="account.report_invoice_with_payments"
-            file="account.report_invoice_with_payments"
-            attachment="(object.state in ('open','in_payment','paid')) and ('FACT'+(object.number or '').replace('/','') + ' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')"
-            print_report_name="'FACT'+(object.number or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '')"
-            groups="account.group_account_invoice"
-        /> -->
+        <record id="univision_account_invoices" model="ir.actions.report">
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">account.report_invoice_with_payments</field>
+            <field name="report_file">account.report_invoice_with_payments</field>
+            <field name="attachment">('test.pdf')</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="groups_id" eval="[(4, ref('account.group_account_invoice')),
+ (4, ref('account.group_account_readonly'))]"/>
+        </record>
         
         
 <!--         
