@@ -22,9 +22,9 @@
     'depends': ['account'],
 
     # always loaded
-    'data': [
-        'views/report_templates.xml',
+    'data': [        
         'views/account_report.xml',
+        'views/report_templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
