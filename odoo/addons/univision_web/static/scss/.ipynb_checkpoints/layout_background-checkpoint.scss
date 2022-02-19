@@ -2,14 +2,7 @@
     img {
         max-height: 96px;
         max-width: 325px;
-    }
-    
-    h3 {
-        color:  $univision-secondary;
-        font-weight: 700;
-        font-size: 1.5rem;
-        
-    }
+    }    
 }
 
 .univision_report_header{
@@ -33,6 +26,22 @@
         }
     }
 }
+
+.o_report_layout_striped {
+    
+    tbody {
+        color: green);
+        tr {
+            &.o_line_section {
+                color: $univision-primary !important;
+                background-color: rgba(73, 80, 87, 0.2) !important;
+            }
+        }
+    }
+    
+    
+}
+
 
 .univision_footer{
      color: gray('700');

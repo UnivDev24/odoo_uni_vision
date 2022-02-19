@@ -30,9 +30,4 @@
     'demo': [
         'demo/demo.xml',
     ],
-    'assets' : {
-        'web.assets_backend': [            
-            'univision_account/static/scss/report.scss'
-        ],
-    },
 }
