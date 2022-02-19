@@ -24,7 +24,7 @@
     # always loaded
     'data': [        
         'views/account_report.xml',
-        'views/report_templates.xml',
+        'views/report_invoice.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
