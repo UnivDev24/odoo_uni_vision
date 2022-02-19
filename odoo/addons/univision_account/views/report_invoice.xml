@@ -19,7 +19,7 @@
 
              
 <!--     FFI BE CAREFUL MUST BE PLACED BEFORE THE FOLLOWING XPATH          -->
-            <xpath expr="//p[@name='comment']" position="replace">
+            <xpath expr="//div[@name='comment']" position="replace">
             </xpath>    
              
             <xpath expr="//div[hasclass('clearfix')]" position="after">  
