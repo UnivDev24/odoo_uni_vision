@@ -6,56 +6,43 @@
 	                  
              
              <xpath expr="//div[hasclass('page')]" position="before">
-              <div class="mt32"></div>
+              <div class="mt-4"></div>
             </xpath>
-                     
-              <!--    FFI TRY TO REMOVE IT           -->
-<!--               <xpath expr="//table[@name='invoice_line_table']/thead/tr/th[last()]/span[last()]" position="replace">
-             </xpath> -->
              
+             <xpath expr="//div[@id='informations']" position="before">  
+                 <div class="mt-3"></div>          
+            </xpath>
              
-             <xpath expr="///tbody[hasclass('invoice_tbody')]/t/tr/t[@name='account_invoice_line_accountable']/td/span[@t-field='line.product_uom_id']" position="replace">
-             </xpath>
-       
+             <xpath expr="//div[@id='informations']" position="after">  
+                 <div class="mb-3"></div>          
+            </xpath>
+
              
-             <!--    FFI TRY TO REMOVE IT           -->
-<!--              
-             <xpath expr="///tbody[hasclass('invoice_tbody')]/t/tr/t[@name='account_invoice_line_accountable']/td[last()]/span[last()]" position="replace">
-             </xpath> -->
-                          
+<!--     FFI BE CAREFUL MUST BE PLACED BEFORE THE FOLLOWING XPATH          -->
+            <xpath expr="//p[@name='comment']" position="replace">
+            </xpath>    
              
             <xpath expr="//div[hasclass('clearfix')]" position="after">  
-                 <div class="mt32"></div>
+                 <div class="mt-5"></div>
+                <div t-if="not is_html_empty(o.narration)" name="comment">
+                        <span t-field="o.narration"/>
+                </div>
+          
             </xpath>
-             
-<!--    FFI TRY TO REMOVE IT           -->
-             
-<!--             <xpath expr="//div[hasclass('page')]/p[@t-if='o.move_type in ('out_invoice', 'in_refund') and o.payment_reference']" position="replace">  
-                
-                 <p t-if="o.move_type in ('out_invoice', 'in_refund') and o.payment_reference" name="payment_communication">
-                        Merci d'utiliser la communication suivante pour votre paiement :  <b><span t-field="o.payment_reference"/></b>
-                    </p>                
-                
-            </xpath>  -->
-             
-             
-<!--              
-             <xpath expr="//p[@name='comment']" position="replace">
-            </xpath> -->
-             
-             
+                     
              
              
              <xpath expr="//p[@name='payment_term']" position="after">  
                  
-                        <p class="mt32" >
+                        <p class="mt-2" >
                             Mode de réglement : 
                         </p>
-                        <p class="ml16">
+                        <p class="ml-3">
                           <span >Par chèque à l'ordre de UNIVISION</span><br><span >Par virement IBAN FR76 1380 7008 7207 1218 3441 192 - BIC CCBPFRPPNAN</span></br>
                 </p>
 
             </xpath>
+
 
             <xpath expr="//p[@name='note']" position="replace">
             </xpath> 
