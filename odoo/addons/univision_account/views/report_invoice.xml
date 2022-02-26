@@ -25,7 +25,8 @@
             <xpath expr="//div[hasclass('clearfix')]" position="after">  
                  <div class="mt-5"></div>
                 <div t-if="not is_html_empty(o.narration)" name="comment">
-                        <span t-field="o.narration"/>
+<!--    FFI - COULD BE UNCOMMENTED IF THE USER WANT TO ADD A COMMENT TO THE INVOICE CHECK LATER                  -->
+<!--                         <span t-field="o.narration"/> -->
                 </div>
           
             </xpath>
@@ -45,6 +46,7 @@
 
 
             <xpath expr="//p[@name='note']" position="replace">
+                
             </xpath> 
 
         </template>
