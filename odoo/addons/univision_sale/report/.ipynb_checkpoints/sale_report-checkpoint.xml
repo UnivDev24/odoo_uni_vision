@@ -3,25 +3,36 @@
     <data>
         
         <!--    FIXMEMIG      -->
-        <report 
-            id="action_report_saleorder"
-            string="Quotation / Order"
+        
+        <!-- QWeb Reports -->
+        
+        <!-- to be consider should be before the initial report -->
+<!--         
+        <report
+             id="00_univision_action_report_saleorder"
+            string="00_Devis Uni Vision"
             model="sale.order" 
             report_type="qweb-pdf"
             file="sale.report_saleorder" 
             name="sale.report_saleorder"
-            print_report_name="(object.state in ('draft', 'sent') and 'Quotation - %s' % (object.name)) or 'Order - %s' % (object.name)"
+            print_report_name="'Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '')"
         />
-
-        <report
-            id="action_report_pro_forma_invoice"
-            string="PRO-FORMA Invoice"
+        
+         <report
+            id="00_univision_action_report_pro_forma_invoice"
+            string="00_Factures PRO-FORMA Uni Vision"
             model="sale.order"
             report_type="qweb-pdf"
             groups="sale.group_proforma_sales"
             file="sale.report_saleorder_pro_forma"
             name="sale.report_saleorder_pro_forma"
-            print_report_name="'PRO-FORMA - %s' % (object.name)"
+            print_report_name="'Offre n°'+(object.name or '')+' - '  + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') + ' - PRO-FORMA'"
         />
+        
+         -->
+       
+
+     
+
     </data>
 </odoo>
