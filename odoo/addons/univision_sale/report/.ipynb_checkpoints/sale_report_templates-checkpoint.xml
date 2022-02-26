@@ -29,7 +29,7 @@
 
              
              <xpath expr="//div[hasclass('clearfix')]" position="after">  
-                 <div class="mt-5"div>
+                 <div class="mt-5"></div>
             </xpath>
              
              <xpath expr="//p[@t-if='not is_html_empty(doc.payment_term_id.note)']" position="replace">  
