@@ -5,7 +5,6 @@
         <field name="name">res.partner.tree</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="	base.view_partner_tree"/>
-        <field eval="8" name="priority"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='phone']" position="after">
                 <field name="mobile" attrs="{'invisible': [('available_in_pos', '=', False)]}"/>
