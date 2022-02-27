@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="	base.view_partner_tree"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='phone']" position="after">
-                <field name="mobile" attrs="{'invisible': [('available_in_pos', '=', False)]}"/>
+                <field name="mobile" />
             </xpath>     
         </field>
     </record>
