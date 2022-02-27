@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="	base.view_partner_tree"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='phone']" position="after">
-                <field name="mobile" />
+                <field name="city" optional="show"/>
             </xpath>     
         </field>
     </record>
