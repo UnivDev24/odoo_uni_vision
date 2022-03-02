@@ -18,9 +18,9 @@
             </xpath>
 
              
-<!--     FFI BE CAREFUL MUST BE PLACED BEFORE THE FOLLOWING XPATH          -->
-            <xpath expr="//div[@name='comment']" position="replace">
-            </xpath>    
+<!--     FFI BE CAREFUL MUST BE PLACED BEFORE THE FOLLOWING XPATH     - BUGTIFUX ??     -->
+<!--             <xpath expr="//div[@name='comment']" position="replace">
+            </xpath>     -->
              
             <xpath expr="//div[hasclass('clearfix')]" position="after">  
                  <div class="mt-5"></div>
