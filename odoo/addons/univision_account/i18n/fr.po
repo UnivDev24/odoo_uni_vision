@@ -46,3 +46,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
 msgid "<span>Unit Price</span>"
 msgstr "<span>Prix unitaire</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "Please use the following communication for your payment :"
+msgstr "Merci d'utiliser la communication suivante pour votre paiement:"
+

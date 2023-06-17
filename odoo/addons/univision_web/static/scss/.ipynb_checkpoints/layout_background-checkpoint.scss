@@ -1,0 +1,48 @@
+.o_background_header_univision {
+    img {
+        max-height: 96px;
+        max-width: 325px;
+    }    
+}
+
+.univision_report_header{
+    color:  $univision-secondary;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+.o_background_footer {
+    .list-inline-item {
+        white-space: nowrap;
+    }
+    ul {
+        border-top: 1px solid $univision-primary;
+        border-bottom: 1px solid $univision-primary;
+        padding: 4px 0;
+        margin: 0 0 4px 0;
+        li {
+            color: $univision-primary
+        }
+    }
+}
+
+.o_report_layout_striped {
+    
+    tbody {
+        tr {
+            &.o_line_section {
+                color: $univision-primary !important;
+                background-color: rgba(73, 80, 87, 0.2) !important;
+            }
+        }
+    }
+    
+    
+}
+
+
+.univision_footer{
+     color: gray('700');
+}
+

@@ -11,19 +11,25 @@
 
     'author': "Uni Vision",
     'website': "http://uni-vision.fr/",
+    'license':"LGPL-3",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'web',
     'version': '0.2',
-
+    'assets' : {
+        'web.report_assets_common': [            
+            'univision_web/static/scss/report.scss',
+            'univision_web/static/scss/layout_background.scss'
+        ],
+    },
     # any module necessary for this one to work correctly
     'depends': ['web'],
 
     # always loaded
     'data': [        
-       'views/report_univision_templates.xml',
+       'views/report_templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
