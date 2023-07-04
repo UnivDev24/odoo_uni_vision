@@ -8,11 +8,11 @@
     'category': 'Theme/Creative',
     'assets' : {
         'website._assets_primary_variables': [
-            'theme_univision/static/scss/primary_variables.scss'
-            'theme_univision/static/scss/secondary_variables.scss'
+            'website_univision/static/scss/primary_variables.scss'
+            'website_univision/static/scss/secondary_variables.scss'
         ],
         'website._assets_frontend_helpers': [
-            'theme_univision/static/scss/bootstrap_overridden.scss'
+            'website_univision/static/scss/bootstrap_overridden.scss'
         ]
     },
 
