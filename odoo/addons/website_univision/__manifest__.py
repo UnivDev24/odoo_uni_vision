@@ -12,7 +12,7 @@
             ('prepend', 'website_univision/static/src/scss/secondary_variables.scss')
         ],
         'web._assets_frontend': [
-            ('prepend', 'website_univision/static/src/scss/bootstrap_overridden.scss')
+            'website_univision/static/src/scss/bootstrap_overridden.scss',
         ]
     },
 
