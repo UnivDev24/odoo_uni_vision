@@ -1,7 +1,7 @@
 {
     'name': 'Univision Theme',
     'description': 'Contains the theme of UniVision.',
-    'version': '1.1',
+    'version': '16.0.1.0.0',
     'author': "Uni Vision",
     'website': "http://uni-vision.fr/",
     'license': "LGPL-3",

@@ -1,7 +1,7 @@
 <odoo>
     <data>
-        
-        
+        <!-- FIXME LATER-->
+        <!--
          <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
 	                  
              
@@ -18,15 +18,15 @@
             </xpath>
 
              
-<!--     FFI BE CAREFUL MUST BE PLACED BEFORE THE FOLLOWING XPATH     - BUGTIFUX ??     -->
-<!--             <xpath expr="//div[@name='comment']" position="replace">
-            </xpath>     -->
+&lt;!&ndash;     FFI BE CAREFUL MUST BE PLACED BEFORE THE FOLLOWING XPATH     - BUGTIFUX ??     &ndash;&gt;
+&lt;!&ndash;             <xpath expr="//div[@name='comment']" position="replace">
+            </xpath>     &ndash;&gt;
              
             <xpath expr="//div[hasclass('clearfix')]" position="after">  
                  <div class="mt-5"></div>
                 <div t-if="not is_html_empty(o.narration)" name="comment">
-<!--    FFI - COULD BE UNCOMMENTED IF THE USER WANT TO ADD A COMMENT TO THE INVOICE CHECK LATER                  -->
-<!--                         <span t-field="o.narration"/> -->
+&lt;!&ndash;    FFI - COULD BE UNCOMMENTED IF THE USER WANT TO ADD A COMMENT TO THE INVOICE CHECK LATER                  &ndash;&gt;
+&lt;!&ndash;                         <span t-field="o.narration"/> &ndash;&gt;
                 </div>
           
             </xpath>
@@ -55,6 +55,6 @@
                 
             </xpath> 
 
-        </template>
+        </template>-->
     </data>
 </odoo>
