@@ -7,28 +7,31 @@ def migrate(cr, version):
 
     # REMOVE ALL VIEWS THAT ARE NOT IN MODULES
     cr.execute("""
-            DELETE FROM ir_ui_view WHERE id NOT IN(SELECT res_id FROM ir_model_data WHERE model='ir.ui.view' ORDER BY module)
-    """)
+                   DELETE FROM ir_actions_report WHERE id=419
+           """)
+
+    cr.execute("""
+                       DELETE FROM ir_actions_report WHERE id=420
+               """)
 
     # REMOVE VIEWS THAT ARE NOT USED ANYMORE
     cr.execute("""
-            UPDATE ir_ui_view SET active = True WHERE id IN 
-            (SELECT res_id FROM ir_model_data WHERE model = 'ir.ui.view' AND module in ('univision_account'))
-    """)
+                       DELETE FROM ir_model_data WHERE id=34756
+               """)
 
-    # REMOVE ALL ACT WINDOWS THAT ARE NOT IN MODULES
     cr.execute("""
-            DELETE FROM ir_act_window WHERE id NOT IN (SELECT res_id FROM ir_model_data WHERE model = 'ir.actions.act_window')
-    """)
+                   DELETE FROM ir_model_data WHERE id=34757
+           """)
 
-    # REMOVE ACT WINDOWS THAT ARE NOT USED ANYMORE
+    # REMOVE ALL VIEWS THAT ARE NOT IN MODULES
     cr.execute("""
-            DELETE FROM ir_model_data WHERE model = 'ir.actions.act_window' AND module IN ('univision_account')
-    """)
+                       DELETE FROM ir_ui_view WHERE id=1091
+               """)
 
-    # TO UNINSTALL CUSTOM MODULE
+    # REMOVE VIEWS THAT ARE NOT USED ANYMORE
     cr.execute("""
-            UPDATE ir_module_module SET state = 'to remove' WHERE name = 'univision_account'
-    """)
+                       DELETE FROM ir_model_data WHERE id=24333
+               """)
+
 
     _logger.info('UniVision Account : pre-migration end')
