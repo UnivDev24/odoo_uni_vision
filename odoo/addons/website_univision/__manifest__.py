@@ -16,7 +16,7 @@
         ]
     },
 
-    'depends': [''],
+    'depends': ['website'],
 
     'data': [
     ],
