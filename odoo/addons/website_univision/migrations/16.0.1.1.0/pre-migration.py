@@ -14,7 +14,7 @@ def migrate(cr, version):
     # REMOVE VIEWS THAT ARE NOT USED ANYMORE
     cr.execute("""
                          UPDATE ir_ui_view SET active = True WHERE id IN 
-                         (SELECT res_id FROM ir_model_dat WHERE model = 'ir.ui.view' AND module in ('website_univision'))
+                         (SELECT res_id FROM ir_model_data WHERE model = 'ir.ui.view' AND module in ('website_univision'))
                  """)
 
     # REMOVE ALL ACT WINDOWS THAT ARE NOT IN MODULES
