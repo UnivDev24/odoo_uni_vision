@@ -25,7 +25,7 @@
         ],
     },
     # any module necessary for this one to work correctly
-    'depends': ['web'],
+    'depends': [''],
 
     # always loaded
     'data': [
