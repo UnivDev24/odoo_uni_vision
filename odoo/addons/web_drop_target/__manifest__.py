@@ -9,8 +9,7 @@
     "category": "Usability",
     "summary": "Allows to drag files into Odoo",
     "depends": [
-        'web',
-        'document'
+        'web'
     ],
     'data': [],
     "assets": {},
