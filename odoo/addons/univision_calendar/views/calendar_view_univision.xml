@@ -1,7 +1,7 @@
 <odoo>
   <data>
       <!--         FIXME MIG    -->
-<!--        <record model="ir.ui.view" id="view_calendar_event_form_inherited">
+        <record model="ir.ui.view" id="view_calendar_event_form_inherited">
             <field name="name">calendar.event.form.inherited</field>
             <field name="model">calendar.event</field>
             <field name="inherit_id" ref="calendar.view_calendar_event_form" />
@@ -10,11 +10,11 @@
 
                  <xpath expr="//page[@name='page_misc']" position="attributes">
                     <attribute name="groups"></attribute>
-                 </xpath> 
-            </field>                               
+                 </xpath>
+            </field>
         </record>
-      
-       -->
+
+
 
       
       

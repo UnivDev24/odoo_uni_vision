@@ -1,7 +1,6 @@
 <odoo>
     <data>
-        <!-- FIXME LATER-->
-        <!--
+
          <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
 	                  
              
@@ -18,20 +17,16 @@
             </xpath>
 
              
-&lt;!&ndash;     FFI BE CAREFUL MUST BE PLACED BEFORE THE FOLLOWING XPATH     - BUGTIFUX ??     &ndash;&gt;
-&lt;!&ndash;             <xpath expr="//div[@name='comment']" position="replace">
-            </xpath>     &ndash;&gt;
+            <xpath expr="//div[@name='comment']" position="replace">
+            </xpath>
              
             <xpath expr="//div[hasclass('clearfix')]" position="after">  
                  <div class="mt-5"></div>
                 <div t-if="not is_html_empty(o.narration)" name="comment">
-&lt;!&ndash;    FFI - COULD BE UNCOMMENTED IF THE USER WANT TO ADD A COMMENT TO THE INVOICE CHECK LATER                  &ndash;&gt;
-&lt;!&ndash;                         <span t-field="o.narration"/> &ndash;&gt;
+                    <span t-field="o.narration"/> &ndash;&gt;
                 </div>
-          
             </xpath>
-                     
-             
+
             <xpath expr="//p[@name='payment_communication']" position="replace">
                 <p t-if="o.move_type in ('out_invoice', 'in_refund') and o.payment_reference" name="payment_communication">
                         Merci d'utiliser la communication suivante pour votre paiement : <b><span t-field="o.name"/></b>
@@ -55,6 +50,6 @@
                 
             </xpath> 
 
-        </template>-->
+        </template>
     </data>
 </odoo>
