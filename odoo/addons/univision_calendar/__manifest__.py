@@ -10,7 +10,7 @@
     """,
 
     'author': "Uni Vision",
-    'website': "http://www.yourcompany.com",
+    'website': "http://uni-vision.fr/",
     'license':"LGPL-3",
 
     # Categories can be used to filter modules in modules listing
