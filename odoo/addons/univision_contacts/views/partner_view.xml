@@ -3,7 +3,7 @@
 
       <!--FIXME LATER-->
 <!--  ADD MOBILE NUMBER IN COLUMN      -->
-    <record id="view_partner_tree_univision" model="ir.ui.view">
+    <!--<record id="view_partner_tree_univision" model="ir.ui.view">
         <field name="name">res.partner.tree</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_tree"/>
@@ -12,10 +12,10 @@
                 <field name="mobile" optional="show"/>
             </xpath>     
         </field>
-    </record>
+    </record>-->
             <!--FIXME LATER-->
       <!-- modify kanban view of res_partner_form - click of kanban item open form in new tab -->
-       <record model="ir.ui.view" id="view_partner_form_univision">
+       <!--<record model="ir.ui.view" id="view_partner_form_univision">
             <field name="name">res.partner.form</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form" />
@@ -25,7 +25,7 @@
                      <button style="cursor:pointer; pointer-events:auto; position:absolute; width:100%; height:100%; background:none; border:none;" title="open" type="object" name="action_open_new_tab"/> 
                 </xpath> 
             </field>                               
-        </record>
+        </record>-->
       
       
       

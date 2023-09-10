@@ -1,7 +1,7 @@
 <odoo>
     <data>
 
-         <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
+        <!-- <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
 	                  
              
              <xpath expr="//div[hasclass('page')]" position="before">
@@ -50,6 +50,6 @@
                 
             </xpath> 
 
-        </template>
+        </template>-->
     </data>
 </odoo>
