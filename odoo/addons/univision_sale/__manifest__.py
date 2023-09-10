@@ -11,20 +11,21 @@
 
     'author': "Uni Vision",
     'website': "http://uni-vision.fr/",
+    'license':"LGPL-3",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'sale',
-    'version': '0.2',
+    'version': '16.0.1.0.0',
 
     # any module necessary for this one to work correctly
     'depends': ['sale'],
 
     # always loaded
     'data': [        
-        'report/sale_report_univision_templates.xml',
-        'report/sale_report_univision.xml',
+        'report/sale_report_templates.xml',
+        'report/sale_report.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
