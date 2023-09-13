@@ -11,21 +11,21 @@
     """,
 
     'author': "Uni Vision",
-    'website': "http://www.yourcompany.com",
+    'website': "http://uni-vision.fr/",
+    'license':"LGPL-3",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'contacts',
-    'version': '0.3',
+    'version': '16.0.1.0.0',
 
     # any module necessary for this one to work correctly
     'depends': ['contacts'],
 
     # always loaded
     'data': [
-        'views/views.xml',
-        # 'security/ir.model.access.csv',
+        'views/partner_view.xml',
         
     ],
     # only loaded in demonstration mode

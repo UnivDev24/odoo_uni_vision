@@ -2,57 +2,69 @@
 <odoo>
     <data>
         <!-- QWeb Reports -->
-        <report
-            id="account_invoices"
-            model="account.invoice"
-            string="Invoices"
-            report_type="qweb-pdf"
-            name="account.report_invoice_with_payments"
-            file="account.report_invoice_with_payments"
-            attachment="(object.state in ('open','in_payment','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')"
-            print_report_name="(object._get_report_base_filename())"
-            groups="account.group_account_invoice"
-        />
+<!--         <record id="test" model="ir.actions.report">
+            <field name="name">Invoices</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">account.report_invoice_with_payments</field>
+            <field name="report_file">account.report_invoice_with_payments</field>
+            <field name="print_report_name">('test')</field>
+            <field name="attachment">('test.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="groups_id" eval="[(4, ref('account.group_account_invoice')),
+ (4, ref('account.group_account_readonly'))]"/>
+        </record> -->
 
-        <report
-            id="account_invoices_without_payment"
+
+<!--
+        <record id="account_invoices_univision" model="ir.actions.report">
+            <field name="name">Invoices</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">account.report_invoice_with_payments</field>
+            <field name="report_file">account.report_invoice_with_payments</field>
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="groups_id" eval="[(4, ref('account.group_account_invoice')),
+ (4, ref('account.group_account_readonly'))]"/>
+        </record> -->
+
+
+<!--                 <record id="00_univision_account_invoices" model="ir.actions.report">
+            <field name="name">Invoices</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">account.report_invoice_with_payments</field>
+            <field name="report_file">account.report_invoice_with_payments</field>
+            <field name="print_report_name">('FACT'+(object.number or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or ''))</field>
+            <field name="attachment">(object.state == 'posted') and ('FACT'+(object.number or '').replace('/','') + ' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="groups_id" eval="[(4, ref('account.group_account_invoice')),
+ (4, ref('account.group_account_readonly'))]"/>
+        </record> -->
+
+
+
+
+<!--          <report
+            id="00_univision_account_invoices_without_payment"
             model="account.invoice"
-            string="Invoices without Payment"
+            string="00_Factures Uni Vision sans paiement"
             report_type="qweb-pdf"
             name="account.report_invoice"
             file="account.report_invoice"
-            attachment="(object.state in ('open','in_payment','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')"
-            print_report_name="(object._get_report_base_filename())"
+            attachment="(object.state in ('open','in_payment','paid')) and ('FACT'+(object.number or '').replace('/','') + ' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')"
+            print_report_name="'FACT'+(object.number or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '')"
         />
 
-        <report
-            id="action_report_aged_partner_balance"
-            model="res.partner"
-            string="Aged Partner Balance"
-            menu="False"
-            report_type="qweb-pdf"
-            name="account.report_agedpartnerbalance"
-            file="account.report_agedpartnerbalance"
-        />
+         -->
 
-        <report
-            id="action_report_journal"
-            model="account.common.journal.report"
-            string="Journals Audit"
-            report_type="qweb-pdf"
-            name="account.report_journal"
-            file="account.report_journal"
-            />
 
-        <report
-            id="action_report_payment_receipt"
-            model="account.payment"
-            string="Payment Receipt"
-            report_type="qweb-pdf"
-            name="account.report_payment_receipt"
-            file="account.report_payment_receipt"
-            menu="True"
-        />
+
 
     </data>
 </odoo>
