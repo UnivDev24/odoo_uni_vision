@@ -2,7 +2,7 @@
 <odoo>
     <data>
 
-        <!-- <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
+         <template id="report_invoice_univision" inherit_id="account.report_invoice_document">
 
 
              <xpath expr="//div[hasclass('page')]" position="before">
@@ -24,7 +24,7 @@
             <xpath expr="//div[hasclass('clearfix')]" position="after">
                  <div class="mt-5"></div>
                 <div t-if="not is_html_empty(o.narration)" name="comment">
-                    <span t-field="o.narration"/> &ndash;&gt;
+                    <span t-field="o.narration"/> -->
                 </div>
             </xpath>
 
@@ -51,6 +51,6 @@
 
             </xpath>
 
-        </template>-->
+        </template>
     </data>
 </odoo>
