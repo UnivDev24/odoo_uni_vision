@@ -19,7 +19,7 @@
     'category': 'Web/Theme',
     'version': '16.0.1.0.0',
     'assets': {
-        'web.report_assets_common': [
+        'web.reports_assets_common': [
             ('include', 'univision_web/static/src/scss/layout_background.scss'),
             ('include', 'univision_web/static/src/scss/report.scss')
         ],
