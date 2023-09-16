@@ -12,6 +12,16 @@
         </record>-->
 
         <record id="account_invoices_univision" model="ir.actions.report">
+            <field name="name">Invoices tutu</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">account.report_invoice_with_payments</field>
+            <field name="report_file">account.report_invoice_with_payments</field>
+            <field name="print_report_name">('tutu')</field>
+            <field name="attachment">('tutu.pdf')</field>
+        </record>
+
+        <!--<record id="account_invoices_univision" model="ir.actions.report">
             <field name="name">Invoices</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
@@ -19,7 +29,7 @@
             <field name="report_file">account.report_invoice_with_payments</field>
             <field name="print_report_name">('FACT'+(object.number or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or ''))</field>
             <field name="attachment">(object.state == 'posted') and ('FACT'+(object.number or '').replace('/','') + ' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')</field>
-        </record>
+        </record>-->
 
 <!--
         <record id="account_invoices_univision" model="ir.actions.report">
