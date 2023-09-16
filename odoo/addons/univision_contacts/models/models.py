@@ -6,26 +6,14 @@ class ResPartner(models.Model):
 
     _inherit = 'res.partner'
 
-    # def action_open_new_tab(self):
-    #     """Open child contact form from the parent partner form view"""
-    #     return {
-    #         "type": "ir.actions.act_window",
-    #         "res_model": "res.partner",
-    #         "res_id": self.id,
-    #         "view_mode": "form",
-    #         "target": "new",
-    #     }
-    #
-
-
-    def open_record(self):
-        return {'type': 'ir.actions.act_window',
-                'res_model': 'res.partner',
-                'name': 'Contacts',
-                'view_type': 'form',
-                'view_mode': 'form',
-                'res_id': self.id,
-                'target': 'current'}
+    # def open_record(self):
+    #     return {'type': 'ir.actions.act_window',
+    #             'res_model': 'res.partner',
+    #             'name': 'Contacts',
+    #             'view_type': 'form',
+    #             'view_mode': 'form',
+    #             'res_id': self.id,
+    #             'target': 'current'}
 
     def action_open_new_tab(self):
         for rec in self:
@@ -38,7 +26,6 @@ class ResPartner(models.Model):
                 action.id) + "&model=res.partner&view_type=form&menu_id=" + str(menu.id)
 
             return {
-
                 'type': 'ir.actions.act_url',
                 'name': "Contact",
                 'target': 'new',

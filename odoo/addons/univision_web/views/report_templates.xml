@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <!-- FIXME LATER -->
-        <!--<template id="external_layout_univision" inherit_id="web.external_layout_striped">
+        <template id="external_layout_univision" inherit_id="web.external_layout_striped">
 	        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">
                     <div class="header" t-att-style="report_header_style">
                         <div class="o_boxed_header">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </xpath>
-        </template>-->
+        </template>
 
 
     </data>
