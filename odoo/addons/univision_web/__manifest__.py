@@ -20,12 +20,12 @@
     'version': '16.0.1.0.0',
     'assets': {
         'web.assets_common': [
-            'univision_web/static/src/scss/layout_background.scss',
             'univision_web/static/src/scss/report.scss',
+            'univision_web/static/src/scss/layout_background.scss',
             ],
         'web.reports_assets_common': [
-            'univision_web/static/src/scss/layout_background.scss',
             'univision_web/static/src/scss/report.scss',
+            'univision_web/static/src/scss/layout_background.scss',
         ],
     },
     # any module necessary for this one to work correctly
