@@ -13,6 +13,6 @@ class ResPartner(models.Model):
             "res_model": "res.partner",
             "res_id": self.id,
             "view_mode": "form",
-            "target": "current",
+            "target": "_blank",
         }
 
