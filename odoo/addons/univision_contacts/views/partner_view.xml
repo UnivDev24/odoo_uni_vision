@@ -25,14 +25,17 @@
                     expr="//field[@name='child_ids']/kanban/templates//field[@name='name']"
                     position="after"
                 >
-                    <button
+                    <button style="cursor:pointer; pointer-events:auto; position:absolute; width:100%; height:100%; background:none; border:none;"
+                            title="open"
+                            type="object" name="action_open_new_tab"/>
+                   <!-- <button
                         class="btn btn-link"
                         type="object"
                         name="action_open_new_tab"
                         title="Open full form"
                     >
                         <i class="fa fa-external-link-square" />
-                    </button>
+                    </button>-->
                 </xpath>
 
             </field>
