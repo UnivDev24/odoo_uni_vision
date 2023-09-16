@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <!-- QWeb Reports -->
-         <record id="test FFI" model="ir.actions.report">
+         <record id="test_FFI" model="ir.actions.report">
             <field name="name">test</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
