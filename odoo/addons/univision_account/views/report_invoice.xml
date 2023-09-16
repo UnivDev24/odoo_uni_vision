@@ -35,7 +35,7 @@
             </xpath>
 
 
-             <xpath expr="//p[@name='payment_term']" position="after">
+             <xpath expr="//div[@name='payment_term']" position="after">
 
                         <p class="mt-2" >
                             Mode de réglement :
