@@ -11,8 +11,16 @@
             <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>
         </record>-->
 
+        <record id="pos_invoice_report_uv" model="ir.actions.report">
+            <field name="name">Invoice</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">report_invoice_univision</field>
+            <field name="print_report_name">'Invoice - %s' % (object.name)</field>
+        </record>
+
         <record id="account_invoices_univision" model="ir.actions.report">
-            <field name="name">Invoices tutu</field>
+            <field name="name">Invoice</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">account.report_invoice_with_payments</field>
