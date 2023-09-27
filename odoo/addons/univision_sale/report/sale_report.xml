@@ -13,7 +13,7 @@
             <field name="print_report_name">('Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or ''))</field>
         </record>
 
-        <record id="report_univision_sale_order_proforma" model="ir.actions.report">
+       <!-- <record id="report_univision_sale_order_proforma" model="ir.actions.report">
             <field name="name">UV - PRO-FORMA Invoice</field>
             <field name="model">sale.order</field>
             <field name="report_type">qweb-pdf</field>
@@ -22,7 +22,7 @@
             <field name="binding_model_id" ref="sale.model_sale_order"/>
             <field name="binding_type">report</field>
             <field name="print_report_name">('Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') + ' - PRO-FORMA')</field>
-        </record>
+        </record>-->
 
 
     </data>
