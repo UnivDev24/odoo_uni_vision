@@ -2,36 +2,28 @@
 <odoo>
     <data>
 
-        <!--    FIXMEMIG      -->
 
-        <!-- QWeb Reports -->
+        <record id="report_univision_sale_order" model="ir.actions.report">
+            <field name="name">Quotation / Order</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">sale.report_saleorder</field>
+            <field name="report_file">sale.report_saleorder</field>
+            <field name="binding_model_id" ref="account.model_sale_order"/>
+            <field name="binding_type">report</field>
+            <field name="print_report_name">('Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or ''))</field>
+        </record>
 
-        <!-- to be consider should be before the initial report -->
-<!--
-        <report
-             id="00_univision_action_report_saleorder"
-            string="00_Devis Uni Vision"
-            model="sale.order" 
-            report_type="qweb-pdf"
-            file="sale.report_saleorder" 
-            name="sale.report_saleorder"
-            print_report_name="'Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '')"
-        />
-
-         <report
-            id="00_univision_action_report_pro_forma_invoice"
-            string="00_Factures PRO-FORMA Uni Vision"
-            model="sale.order"
-            report_type="qweb-pdf"
-            groups="sale.group_proforma_sales"
-            file="sale.report_saleorder_pro_forma"
-            name="sale.report_saleorder_pro_forma"
-            print_report_name="'Offre n°'+(object.name or '')+' - '  + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') + ' - PRO-FORMA'"
-        />
-
-         -->
-
-
+        <record id="report_univision_sale_order_proforma" model="ir.actions.report">
+            <field name="name">PRO-FORMA Invoice</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">sale.report_saleorder_pro_forma</field>
+            <field name="report_file">sale.report_saleorder_pro_forma</field>
+            <field name="binding_model_id" ref="account.model_sale_order"/>
+            <field name="binding_type">report</field>
+            <field name="print_report_name">('Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') + ' - PRO-FORMA')</field>
+        </record>
 
 
     </data>
