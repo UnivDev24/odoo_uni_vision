@@ -10,9 +10,7 @@
             <field name="report_name">account.report_invoice</field>
             <field name="report_file">account.report_invoice</field>
             <field name="binding_model_id" ref="account.model_account_move"/>
-            <field name="binding_type">report</field><!--
-            <field name="print_report_name">(object._get_report_base_filename())</field>
-            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>-->
+            <field name="binding_type">report</field>
             <field name="print_report_name">('FACT'+(object._get_report_base_filename() or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or ''))</field>
             <field name="attachment">(object.state == 'posted') and ('FACT'+(object._get_report_base_filename() or '').replace('/','') + ' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')</field>
 
