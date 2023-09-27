@@ -2,20 +2,24 @@
 <odoo>
     <data>
 
-        <record id="report_univision_account_invoice_without_payment" model="ir.actions.report">
-            <field name="name">UV - Invoices without Payment</field>
+
+        <record id="report_univision_account_invoice" model="ir.actions.report">
+            <field name="name">Invoices UV</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">account.report_invoice</field>
             <field name="report_file">account.report_invoice</field>
             <field name="binding_model_id" ref="account.model_account_move"/>
-            <field name="binding_type">report</field>
+            <field name="binding_type">report</field><!--
+            <field name="print_report_name">(object._get_report_base_filename())</field>
+            <field name="attachment">(object.state == 'posted') and ((object.name or 'INV').replace('/','_')+'.pdf')</field>-->
             <field name="print_report_name">('FACT'+(object._get_report_base_filename() or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or ''))</field>
             <field name="attachment">(object.state == 'posted') and ('FACT'+(object._get_report_base_filename() or '').replace('/','') + ' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')</field>
+
         </record>
 
         <record id="report_univision_account_invoice" model="ir.actions.report">
-            <field name="name">UV - Invoices</field>
+            <field name="name">UV - Invoices wit payment</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">account.report_invoice_with_payments</field>
