@@ -7,8 +7,8 @@
             <field name="name">UV - Quotation / Order</field>
             <field name="model">sale.order</field>
             <field name="report_type">qweb-pdf</field>
-            <field name="report_name">report_invoice_univision</field>
-            <field name="report_file">report_invoice_univision</field>
+            <field name="report_name">univision_sale.report_invoice_univision</field>
+            <field name="report_file">univision_sale.report_invoice_univision</field>
             <field name="binding_model_id" ref="sale.model_sale_order"/>
             <field name="binding_type">report</field>
             <field name="print_report_name">(object.state in ('draft', 'sent') and 'TUTU Quotation - %s' % (object.name)) or 'TUTU Order - %s' % (object.name)</field>
