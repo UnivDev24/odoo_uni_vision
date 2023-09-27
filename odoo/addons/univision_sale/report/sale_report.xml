@@ -3,7 +3,7 @@
     <data>
 
         <record id="report_univision_sale_order" model="ir.actions.report">
-            <field name="name">Quotation / Order</field>
+            <field name="name">UV - Quotation / Order</field>
             <field name="model">sale.order</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">sale.report_saleorder</field>
@@ -14,7 +14,7 @@
         </record>
 
         <record id="report_univision_sale_order_proforma" model="ir.actions.report">
-            <field name="name">PRO-FORMA Invoice</field>
+            <field name="name">UV - PRO-FORMA Invoice</field>
             <field name="model">sale.order</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">sale.report_saleorder_pro_forma</field>

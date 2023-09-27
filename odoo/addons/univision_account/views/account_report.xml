@@ -3,7 +3,7 @@
     <data>
 
         <record id="report_univision_account_invoice_without_payment" model="ir.actions.report">
-            <field name="name">Invoices without Payment</field>
+            <field name="name">UV - Invoices without Payment</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">account.report_invoice</field>
@@ -15,7 +15,7 @@
         </record>
 
         <record id="report_univision_account_invoice" model="ir.actions.report">
-            <field name="name">Invoices</field>
+            <field name="name">UV - Invoices</field>
             <field name="model">account.move</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">account.report_invoice_with_payments</field>
