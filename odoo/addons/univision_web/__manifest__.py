@@ -22,7 +22,6 @@
         'web.assets_frontend': [
             'univision_web/static/src/scss/report.scss',
             'univision_web/static/src/scss/layout_background.scss',
-            'univision_web/static/src/scss/form_controller.scss'
             ],
         'web.report_assets_common': [
             'univision_web/static/src/scss/report.scss',
