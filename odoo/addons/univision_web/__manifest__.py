@@ -19,6 +19,9 @@
     'category': 'Web/Theme',
     'version': '16.0.1.0.0',
     'assets': {
+        'web.assets_backend': [
+            'univision_web/static/src/scss/form_controller.scss',
+            ],
         'web.assets_frontend': [
             'univision_web/static/src/scss/report.scss',
             'univision_web/static/src/scss/layout_background.scss',
