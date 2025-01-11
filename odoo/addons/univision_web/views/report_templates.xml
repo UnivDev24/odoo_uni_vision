@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <!-- FIXME LATER -->
+    <!--    &lt;!&ndash; FIXME LATER &ndash;&gt;
         <template id="external_layout_univision" inherit_id="web.external_layout_striped">
 	        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">
                     <div class="header" t-att-style="report_header_style">
@@ -34,7 +34,7 @@
                 </div>
             </xpath>
         </template>
-
+-->
 
     </data>
 </odoo>

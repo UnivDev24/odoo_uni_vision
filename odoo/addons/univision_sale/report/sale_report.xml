@@ -3,7 +3,7 @@
     <data>
 
         <!--THIS IS NOT OK -->
-        <record id="report_univision_sale_order" model="ir.actions.report">
+     <!--   <record id="report_univision_sale_order" model="ir.actions.report">
             <field name="name">UV - Quotation / Order</field>
             <field name="model">sale.order</field>
             <field name="report_type">qweb-pdf</field>
@@ -15,7 +15,7 @@
             <field name="attachment">('Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')</field>
         </record>
 
-        <!--THIS IS NOT OK -->
+        &lt;!&ndash;THIS IS NOT OK &ndash;&gt;
         <record id="report_univision_sale_order_proforma" model="ir.actions.report">
             <field name="name">UV - PRO-FORMA Invoice</field>
             <field name="model">sale.order</field>
@@ -27,7 +27,7 @@
             <field name="print_report_name">('Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') + ' - PRO-FORMA')</field>
             <field name="attachment">('Offre n°'+(object.name or '')+' - ' + (object.partner_id.name or '') +' - ' + (object.partner_id.parent_id.name or '') +'.pdf')</field>
         </record>
-
+-->
 
     </data>
 </odoo>
