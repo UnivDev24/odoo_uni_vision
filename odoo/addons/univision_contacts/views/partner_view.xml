@@ -15,12 +15,12 @@
     </record>-->
             <!--FIXME LATER-->
       <!-- modify kanban view of res_partner_form - click of kanban item open form in new tab -->
-          <record id="view_partner_form" model="ir.ui.view">
+         <!-- <record id="view_partner_form" model="ir.ui.view">
             <field name="name">Add button to see child contacts full form</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form" />
             <field name="arch" type="xml">
-                <!-- Make child kanban able to open form in full view -->
+                &lt;!&ndash; Make child kanban able to open form in full view &ndash;&gt;
                 <xpath
                     expr="//field[@name='child_ids']/kanban/templates//field[@name='name']"
                     position="after"
@@ -36,7 +36,7 @@
                 </xpath>
 
             </field>
-        </record>
+        </record>-->
 
       
       
